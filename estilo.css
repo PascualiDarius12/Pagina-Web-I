@@ -1,13 +1,14 @@
 
 .contenedorMenu{
-    background: #ffffff;
+    background: #ffffff58;
     width: 100%;
     position: fixed;
     z-index: 100;
-    margin-top: 0%;
+    
+    
 }
 .botonesMenu{
-    background-color: rgb(255, 255, 255);
+    
     float: left;
     margin-left: 12px;
     margin-right: 12px;
@@ -26,7 +27,6 @@
     
 }
 .botonLogo{
-    background-color: rgb(255, 255, 255);
     float: left;
     margin-left: 0px;
     margin-right: 15px;
@@ -37,8 +37,7 @@
 .botonTurno{
     background-color: rgb(42, 182, 96);
     float: right;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-right: 15px;
     display: block; 
     padding: 9px;
     color:rgb(255, 255, 255);
@@ -69,4 +68,40 @@
 
 .botonTurno:hover{
     background-color: darkgreen;
+}
+
+
+.separador{
+    background-color: #ffffff;
+    width: 100%;
+    height: 64px;
+}
+
+
+.ContenedorImgYTxt{
+   background-color: rgb(0, 136, 255);
+   height: 400px;
+   position: relative;
+   
+    
+}
+
+.Imagen{
+    object-fit: cover;
+}
+
+
+.Texto{
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 3%;
+    
+   
 }
