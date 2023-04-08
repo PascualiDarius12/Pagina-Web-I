@@ -122,7 +122,7 @@
 .tarjetas{
     
     position: relative;
-    margin-right: 15%;
+    margin-right: 16%;
     margin-left: 4%;
     width: 17%;
     height: 100%;
@@ -168,7 +168,7 @@
 .textoTarjeta{
     
     font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(0, 0, 0, 0.819);
     text-align: center;
     
@@ -176,4 +176,21 @@
 
 .imgTarjeta:hover{
     transform: scale(1.1);
+}
+
+.contenedorSm2{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.tituloSm2{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #0088ff;
+}
+
+.textoSm2{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.819);
 }
