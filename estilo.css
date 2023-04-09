@@ -1,6 +1,6 @@
 
 .contenedorMenu{
-    background: #ffffff58;
+    background: #ffffff40;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -8,7 +8,7 @@
     
 }
 .botonesMenu{
-    
+    background-color: #ffffff;
     float: left;
     margin-left: 12px;
     margin-right: 12px;
@@ -29,12 +29,16 @@
 }
 .botonLogo{
     float: left;
-    margin-left: 0px;
+    margin-left: 3px;
     margin-right: 15px;
     margin-top: 8px;
     margin-bottom: 8px;
     transition: transform .2s; 
     
+}
+
+.imglogo{
+    border-radius: 50%;
 }
 .botonTurno{
     background-color: rgb(42, 182, 96);
@@ -115,6 +119,7 @@
     text-align: center;
     margin-right: 2%;
     margin-left: 3%;
+    line-height: 30px;
     
    
 }
@@ -158,9 +163,11 @@
 }
 
 .imgTarjeta{
+    
     margin-left: auto;
     margin-right: auto;  
     transition: transform .2s;
+    
 }
 
 .tituloTarjeta{
@@ -178,6 +185,7 @@
     font-size: 18px;
     color: rgba(0, 0, 0, 0.819);
     text-align: center;
+    line-height: 30px;
     
 }
 
@@ -200,6 +208,7 @@
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.819);
+    line-height: 30px;
 }
 
 .fraseSm2{
@@ -207,36 +216,66 @@
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #0188ff;
+    line-height: 30px;
 
 }
 
 
+.contenedorfooterxl{
+    margin-top: 3%;
+    margin-left: 0%;
+    background-color: rgb(0, 29, 77);
+}
 
 
 .contenedorFooter{
+    
     display: inline;
     position: absolute;
+    text-align: justify;
     bottom: auto;
-    height: 45%;
-    width: 79.5%;
-    background-color: black;
+    height: 38.1%;
+    width: 80%;
+    background-color: rgb(0, 29, 77);
     
    
     
 }
 
 .direccion{
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    
     color: #ffffff;
     display: inline-flex;
+    margin-left: 115px;
+    position: relative;
+    top: 20%;
+    
+    
 
 }
 
-.direccion2{
+
+
+.titulof {
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: #ffffff;
-    display: inline-flex;
+    color: #0088ff;
+    
+   
+}
+
+.contenedordires{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 100px;
+    color: dimgrey;
+    line-height: 20px;
+}
+
+.imgfooter{
+    border-radius: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
 
 }
