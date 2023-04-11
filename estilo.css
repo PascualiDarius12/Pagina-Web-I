@@ -97,29 +97,43 @@
 
 
 .ContenedorImgYTxt{
-   background-color: #0088ff;
-   height: 400px;
-   position: relative;
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    
+    
    
     
 }
 
+.cajatext{
+    width: 770px;
+    height: 100px;
+    background-color: #0088ff;
+    
+    
+}
+
 .Imagen{
-    object-fit: cover;
+
+    width: 770px;
+    height: 450px;
+   
+    
 }
 
 
 .Texto{
     
-    position: absolute;
-    top: 40%;
-    left: 50%;
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    margin-right: 2%;
-    margin-left: 3%;
     line-height: 30px;
     
    
@@ -206,7 +220,7 @@
     position: relative;
     bottom: 0;
     height: 300px;
-    margin-top: 5%;
+    margin-top: 10%;
     background-color: rgb(0, 5, 40);
 }
 
@@ -285,5 +299,16 @@ body{
 
     .contenedorMenu {
         visibility: visible;
+    }
+
+    .ContenedorImgYTxt {
+        flex-direction: row;
+    }
+    .cajatext{
+        width: 750px;
+        height: 450px;
+        background-color: #0088ff;
+        
+        
     }
   }
