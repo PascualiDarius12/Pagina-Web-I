@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    visibility: hidden;
     
     
 }
@@ -132,7 +133,7 @@
     position: relative;
     margin-top: 5%;
     justify-content: space-around;
-    background-color: rgba(0, 229, 255, 0.085);
+    
 
 }
 .tarjetas{
@@ -264,6 +265,15 @@
 
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 
 @media screen and (min-width: 980px) {
     .contenedorTarjetas {
@@ -271,5 +281,9 @@
         flex-direction: row;
         
         
+    }
+
+    .contenedorMenu {
+        visibility: visible;
     }
   }
