@@ -4,7 +4,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    visibility: hidden;
+    visibility: collapse;
     
     
 }
@@ -101,9 +101,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
-    
+    background-color:#ffffff;
     
     
     
@@ -112,29 +113,38 @@
 }
 
 .cajatext{
-    width: 770px;
-    height: 100px;
-    background-color: #0088ff;
+    width: 100%;
+    height: 100%;
+    
+    
     
     
 }
 
+.cajaimg{
+    width: 750px;
+    height: 450px;
+    
+}
 .Imagen{
 
-    width: 770px;
-    height: 450px;
-   
     
+    width: 100%;
+    height: 100%;
+
 }
 
 
 .Texto{
     
+    position: absolute;
+    top: 150px;
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #ffffff;
     text-align: center;
     line-height: 30px;
+    text-shadow: 5px 5px 5px #000000;
     
    
 }
@@ -147,6 +157,7 @@
     position: relative;
     margin-top: 5%;
     justify-content: space-around;
+    
     
 
 }
@@ -303,12 +314,16 @@ body{
 
     .ContenedorImgYTxt {
         flex-direction: row;
-    }
-    .cajatext{
-        width: 750px;
-        height: 450px;
         background-color: #0088ff;
-        
+    }
+   
+    .cajatext{
+        width: 50%;
+        height: 50%;
+    }
+
+    .Texto{
+        text-shadow: none;
         
     }
   }
