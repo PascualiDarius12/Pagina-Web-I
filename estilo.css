@@ -8,6 +8,11 @@
     
     
 }
+
+
+.menualternativo{
+   background-image: url("imagenes/menu.png");
+}
 .botonesMenu{
     background-color: #ffffff;
     float: left;
