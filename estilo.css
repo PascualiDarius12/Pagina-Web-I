@@ -32,19 +32,18 @@
     background-color: #ffffff;
     color: #0088ff;
     list-style: none;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: center;
     width: 100%;
     line-height: 1.5rem;
+    border-bottom: solid;
+    border-color: #0000004e;
     
     
 }
 
-.botonesMenu2:hover{
-    background-color: #0088ff;
-    color: #ffffff;
-}
 
 a{
     text-decoration: none;
@@ -52,7 +51,7 @@ a{
 }
 
 a:hover{
-    color: #ffffff;
+    color: #0088ff;
 }
 
 
