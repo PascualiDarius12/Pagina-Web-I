@@ -35,7 +35,78 @@
   </nav>
 
 
-  <footer class="contenedorfooterxl" >
+
+   <div class = "contenedorformulario" >
+    
+        <form action="enviarForm">
+        
+            <div class="contenedorform1">
+             <label>
+                Nombre y Apellido:
+             </label>
+             <input type="text" class="form-control"  name="formularioNombre" placeholder="Por favor Ingrese su nombre completo">
+             <div [hidden]="true">
+                Llenar este campo
+             </div>
+            </div>
+        
+       
+            <div class="contenedorform2">
+             <label ">
+                DNI:
+             </label>
+             <input type="text" class="form-control" name="formularioDni" placeholder="Por favor Ingrese su DNI">  
+            </div>
+
+           <div class="contenedorform3">
+             <label>
+                Telefono:
+             </label>
+             <input type="text" class="form-control" name="telefono" placeholder="Por favor Ingrese su numero de telefono">  
+            </div>
+
+            <div class="contenedorform3">
+             <label class="mx-2 text-white">
+                Especialidad:
+             </label>
+             <select class="form-select" name="especialidad" id="">
+                <option value="0">--</option>
+                <option value="1">Kinesiologia</option>
+                <option value="2">Fonoaudiologia</option>
+                <option value="3">Psicologia</option>
+                <option value="4">Hidroterapia</option>
+             </select>
+            </div>
+       
+            <div class="contenedorform3">
+             <label>
+                Obra Social:
+             </label>
+             <select class="form-select" name="obraSocial" id="">
+                <option value="0">--</option>
+                <option value="1">Dosep</option>
+                <option value="2">Oseca</option>
+                <option value="3">Swift Medical</option>
+                <option value="4">Sancor</option>
+             </select> 
+            </div>
+    
+        
+        </form>
+    
+        <div>
+       
+           <button type="submit" class="botonenviar" (click)="guardar()" >Solicitar turno</button></div>
+           <div [hidden]="!guardado">
+            Turno Solicitado, en brevedad secretaria se comunicara con usted.
+           </div>
+        
+        </div>
+    
+    </div>
+
+
+  <footer class="contenedorfooter" >
     <div>
      <img class="imgfooter" width="250" height="250" src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg" alt="">
     </div>

@@ -70,14 +70,15 @@ body{
     vertical-align: baseline;
  }
 
- .contenedorfooterxl{
+ .contenedorfooter{
     
    
     display: flex;
     flex-direction: row;
     align-items: center;
     bottom: 0;
-    position: relative;
+    position: absolute;
+    width: 100%;
     margin-top: 5%; 
     justify-content: space-around;
     background-color: #000e1a;
@@ -174,7 +175,7 @@ body{
         
     }
 
-    .contenedorfooterxl{
+    .contenedorfooter{
 
         flex-direction: column;
 
