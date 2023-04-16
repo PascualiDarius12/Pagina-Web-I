@@ -24,7 +24,7 @@
     
     <div class="menu">
       <ul class="lista">
-        <li class="botonesMenu"><a  href="">Bienvenidos</a></li>
+        <li class="botonesMenu"><a  href="/index.html">Bienvenidos</a></li>
         <li class="botonesMenu"><a  href="">Servicios</a></li>
         <li class="botonesMenu"><a  href="">Profesionales</a></li>
         <li class="botonesMenu"><a href="">Acceso</a></li>
@@ -35,8 +35,8 @@
   </nav>
 
 
-
-   <div class = "contenedorformulario" >
+<div class="contenedorformulario">
+    <div class = "formulario" >
     
         <form action="enviarForm">
         
@@ -45,14 +45,12 @@
                 Nombre y Apellido:
              </label>
              <input type="text" class="form-control"  name="formularioNombre" placeholder="Por favor Ingrese su nombre completo">
-             <div [hidden]="true">
-                Llenar este campo
-             </div>
+        
             </div>
         
        
             <div class="contenedorform2">
-             <label ">
+             <label>
                 DNI:
              </label>
              <input type="text" class="form-control" name="formularioDni" placeholder="Por favor Ingrese su DNI">  
@@ -66,7 +64,7 @@
             </div>
 
             <div class="contenedorform3">
-             <label class="mx-2 text-white">
+             <label >
                 Especialidad:
              </label>
              <select class="form-select" name="especialidad" id="">
@@ -97,14 +95,14 @@
         <div>
        
            <button type="submit" class="botonenviar" (click)="guardar()" >Solicitar turno</button></div>
-           <div [hidden]="!guardado">
-            Turno Solicitado, en brevedad secretaria se comunicara con usted.
-           </div>
+          
         
         </div>
     
     </div>
 
+</div>
+   
 
   <footer class="contenedorfooter" >
     <div>
