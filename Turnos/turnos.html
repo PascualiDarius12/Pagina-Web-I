@@ -18,7 +18,7 @@
        alt="" width="45" height="45">
      </a>
       <input type="checkbox" id="tresrayas">
-      <label for="tresrayas"><i class="fas fa-bars" style="color: rgb(92, 94, 96);"></i></label>
+      <label for="tresrayas"><i class="fas fa-bars" style="color: rgb(92, 94, 96);font-size: 30px;"></i></label>
    
     
     
@@ -34,17 +34,18 @@
     </div>
   </nav>
 
+  
 
 <div class="contenedorformulario">
     <div class = "formulario" >
     
-        <form action="enviarForm">
+        <form name="formulario" action="enviarForm.php" method="get" target="_self">
         
             <div class="contenedorform1">
              <label>
                 Nombre y Apellido:
              </label>
-             <input type="text" class="form-control"  name="formularioNombre" placeholder="Por favor Ingrese su nombre completo">
+             <input type="text" id="nombre"   name="nombre" placeholder="Por favor Ingrese su nombre completo">
         
             </div>
         
@@ -53,26 +54,28 @@
              <label>
                 DNI:
              </label>
-             <input type="text" class="form-control" name="formularioDni" placeholder="Por favor Ingrese su DNI">  
+             <input type="text" if="dni" name="dni" placeholder="Por favor Ingrese su DNI">  
             </div>
 
            <div class="contenedorform3">
              <label>
-                Telefono:
+                Telefono (+54):
              </label>
-             <input type="text" class="form-control" name="telefono" placeholder="Por favor Ingrese su numero de telefono">  
+             <input type="text" id="telefono" name="telefono" placeholder="Por favor Ingrese su numero de telefono">  
             </div>
 
             <div class="contenedorform3">
              <label >
                 Especialidad:
              </label>
-             <select class="form-select" name="especialidad" id="">
+             <select  name="especialidad" id="especialidad">
                 <option value="0">--</option>
                 <option value="1">Kinesiologia</option>
                 <option value="2">Fonoaudiologia</option>
                 <option value="3">Psicologia</option>
                 <option value="4">Hidroterapia</option>
+                <option value="5">Traumatologia</option>
+                <option value="6">Neurologia</option>
              </select>
             </div>
        
@@ -80,24 +83,28 @@
              <label>
                 Obra Social:
              </label>
-             <select class="form-select" name="obraSocial" id="">
+             <select  name="obraSocial" id="obraSocial">
                 <option value="0">--</option>
+                
                 <option value="1">Dosep</option>
                 <option value="2">Oseca</option>
                 <option value="3">Swift Medical</option>
                 <option value="4">Sancor</option>
+                <option value="5">Otro</option>
              </select> 
+            </div>
+
+            <div>
+       
+               <button type="submit" id="boton"  name="boton"  >Solicitar</button>
+              
+            
             </div>
     
         
         </form>
     
-        <div>
-       
-           <button type="submit" class="botonenviar" (click)="guardar()" >Solicitar turno</button></div>
-          
-        
-        </div>
+      
     
     </div>
 
@@ -172,4 +179,5 @@
 
 
 </body>
+<script src="Formulario.js"></script>
 </html>
