@@ -11,16 +11,26 @@
 
 
     /*Un if para comprobar si la partre superio de nuestro contenedor 
-    es menor que la altura de la pantalla aplicamos .visible
+    es menor que la altura de la pantalla aplicamos la clase .visible
     si no quitamos la clase .visible*/
 
-    var aparece = function(){ 
-      
+
+    var aparece1 = function(){
+
         if(contenedorImgyTxt.getBoundingClientRect().top < alturaPantalla){
-        contenedorImgyTxt.classList.add('visible');
-       }else{
-        contenedorImgyTxt.classList.remove('visible')
-       }
+            contenedorImgyTxt.classList.add('visible');
+           }else{
+            contenedorImgyTxt.classList.remove('visible')
+           }
+
+    }
+
+
+
+
+    var aparece = function(){
+        aparece1();
+        
     }
 
 
