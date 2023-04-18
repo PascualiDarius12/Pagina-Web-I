@@ -1,6 +1,6 @@
 (function(){
 
-    var formulario = document.getElementsByName('formulario')[0],
+    var formulario = document.getElementsByName('formulario')[0], /*ese 0 es por que usamos name*/
         elementos = formulario.elementos,
         boton = document.getElementById('boton')
 
@@ -62,3 +62,4 @@
   
 
 }())
+

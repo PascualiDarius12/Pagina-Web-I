@@ -144,7 +144,10 @@
     align-items: center;
     background-color:#ffffff;
     
+    
 }
+
+
 
 .cajatext{
     width: 100%;
@@ -191,10 +194,22 @@
     position: relative;
     margin-top: 5%;
     justify-content: space-around;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  
     
     
 
 }
+
+.visible {
+    opacity: 1; 
+    transform: translate(0, 0);
+    
+    
+   
+  }
 .tarjetas{
     
     margin-top: 3%;
