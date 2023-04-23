@@ -1,183 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilosTurnos.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>Centro medico-Turnos</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="estilosTurnos.css" />
+   <link rel="stylesheet" type="text/css" href="../estilo.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <title>Centro medico-Turnos</title>
 </head>
+
 <body>
-    
-<nav class="navegador">
-    
-    
-    <a  href="../index.html">
-      <img class="logo" src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg" 
-       alt="" width="45" height="45">
-     </a>
+
+   <nav class="navegador">
+
+
+      <a href="../index.html">
+         <img class="logo"
+            src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg"
+            alt="" width="45" height="45">
+      </a>
       <input type="checkbox" id="tresrayas">
       <label for="tresrayas"><i class="fas fa-bars" style="color: rgb(92, 94, 96);font-size: 30px;"></i></label>
-   
-    
-    
-    <div class="menu">
-      <ul class="lista">
-        <li class="botonesMenu"><a  href="../index.html">Bienvenidos</a></li>
-        <li class="botonesMenu"><a  href="">Servicios</a></li>
-        <li class="botonesMenu"><a  href="">Profesionales</a></li>
-        <li class="botonesMenu"><a href="">Acceso</a></li>
 
-       
-      </ul>
-    </div>
-  </nav>
 
-  
 
-<div class="contenedorformulario">
-    <div class = "formulario" >
-    
-        <form name="formulario" action="enviarForm.php" method="get" target="_self">
-        
+      <div class="menu">
+         <ul class="lista">
+            <li class="botonesMenu"><a href="../index.html">Bienvenidos</a></li>
+            <li class="botonesMenu"><a href="../Servicios/servicios.html">Servicios</a></li>
+            <li class="botonesMenu"><a href="">Profesionales</a></li>
+            <li class="botonesMenu"><a href="">Acceso</a></li>
+
+
+         </ul>
+      </div>
+   </nav>
+
+
+
+   <div class="contenedorformulario">
+      <div class="formulario">
+
+         <form name="formulario" action="enviarForm.php" method="get" target="_self">
+
             <div class="contenedorform1">
-             <label>
-                Nombre y Apellido:
-             </label>
-             <input type="text" id="nombre"   name="nombre" placeholder="Ingrese su nombre completo">
-        
+               <label>
+                  Nombre y Apellido:
+               </label>
+               <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+
             </div>
-        
-       
+
+
             <div class="contenedorform2">
-             <label>
-                DNI:
-             </label>
-             <input type="text" if="dni" name="dni" placeholder="Ingrese su DNI">  
-            </div>
-
-           <div class="contenedorform3">
-             <label>
-                Telefono (+54):
-             </label>
-             <input type="text" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono">  
+               <label>
+                  DNI:
+               </label>
+               <input type="text" if="dni" name="dni" placeholder="Ingrese su DNI">
             </div>
 
             <div class="contenedorform3">
-             <label >
-                Especialidad:
-             </label>
-             <select  name="especialidad" id="especialidad">
-                <option value="0">--</option>
-                <option value="1">Kinesiologia</option>
-                <option value="2">Fonoaudiologia</option>
-                <option value="3">Psicologia</option>
-                <option value="4">Hidroterapia</option>
-                <option value="5">Traumatologia</option>
-                <option value="6">Neurologia</option>
-             </select>
+               <label>
+                  Telefono (+54):
+               </label>
+               <input type="text" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono">
             </div>
-       
+
             <div class="contenedorform3">
-             <label>
-                Obra Social:
-             </label>
-             <select  name="obraSocial" id="obraSocial">
-                <option value="0">--</option>
-                
-                <option value="1">Dosep</option>
-                <option value="2">Oseca</option>
-                <option value="3">Swift Medical</option>
-                <option value="4">Sancor</option>
-                <option value="5">Otro</option>
-             </select> 
+               <label>
+                  Especialidad:
+               </label>
+               <select name="especialidad" id="especialidad">
+                  <option value="0">--</option>
+                  <option value="1">Kinesiologia</option>
+                  <option value="2">Fonoaudiologia</option>
+                  <option value="3">Psicologia</option>
+                  <option value="4">Hidroterapia</option>
+                  <option value="5">Traumatologia</option>
+                  <option value="6">Neurologia</option>
+               </select>
+            </div>
+
+            <div class="contenedorform3">
+               <label>
+                  Obra Social:
+               </label>
+               <select name="obraSocial" id="obraSocial">
+                  <option value="0">--</option>
+
+                  <option value="1">Dosep</option>
+                  <option value="2">Oseca</option>
+                  <option value="3">Swift Medical</option>
+                  <option value="4">Sancor</option>
+                  <option value="5">Otro</option>
+               </select>
             </div>
 
             <div>
-       
-               <button type="submit" id="boton"  name="boton"  >Solicitar</button>
-              
-            
+
+               <button type="submit" id="boton" name="boton">Solicitar</button>
+
+
             </div>
-    
-        
-        </form>
-    
-      
-    
-    </div>
 
-</div>
-   
 
-  <footer class="contenedorfooter" >
-    <div>
-     <img class="imgfooter" width="250" height="250" src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg" alt="">
-    </div>
-       
-    
-       
-       
-           <div class="contenedordires"> 
-               <h5 class="titulof">San Luis</h5> 
-               <p class="textof">   
-                   
-                    Centro medico y de Rehabilitacion:
-                       <br>
-                       Mitre 1234
-                       <br>
-                       2664-768576
-                          <a href="https://api.whatsapp.com/send/?phone=542664974803">
-                           <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803" src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-                          </a>
-                       <br>
-                       Turnos onlines
-                       <br>
-                   
-               </p>
-           </div>
+         </form>
 
-           <div class="contenedordires"> 
-               <h5 class="titulof">Villa Mercedes</h5> 
-               <p class="textof">   
-                   
-                    Centro medico y de Rehabilitacion:
-                       <br>
-                       Mitre 1234
-                       <br>
-                       2664-768576
-                          <a href="https://api.whatsapp.com/send/?phone=542664974803">
-                           <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803" src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-                          </a>
-                       <br>
-                       Turnos onlines
-                       <br>
-                   
-               </p>
-           </div>
 
-           <div class="contenedordires"> 
-               <h5 class="titulof">Merlo</h5> 
-               <p class="textof">   
-                   
-                    Centro medico y de Rehabilitacion:
-                       <br>
-                       Mitre 1234
-                       <br>
-                       2664-768576
-                          <a href="https://api.whatsapp.com/send/?phone=542664974803">
-                           <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803" src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-                          </a>
-                       <br>
-                       Turnos onlines
-                       <br>
-                   
-               </p>
-           </div>
-  
+
+      </div>
+
+   </div>
+
+
+   <footer class="contenedorfooterxl">
+      <div>
+         <img class="imgfooter" width="250" height="250"
+            src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg"
+            alt="">
+      </div>
+
+
+
+
+      <div class="contenedordires">
+         <h5 class="titulof">San Luis</h5>
+         <p class="textof">
+
+            Centro medico y de Rehabilitacion:
+            <br>
+            Mitre 1234
+            <br>
+            2664-768576
+            <a href="https://api.whatsapp.com/send/?phone=542664974803">
+               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
+                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
+            </a>
+            <br>
+            Turnos onlines
+            <br>
+
+         </p>
+      </div>
+
+      <div class="contenedordires">
+         <h5 class="titulof">Villa Mercedes</h5>
+         <p class="textof">
+
+            Centro medico y de Rehabilitacion:
+            <br>
+            Mitre 1234
+            <br>
+            2664-768576
+            <a href="https://api.whatsapp.com/send/?phone=542664974803">
+               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
+                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
+            </a>
+            <br>
+            Turnos onlines
+            <br>
+
+         </p>
+      </div>
+
+      <div class="contenedordires">
+         <h5 class="titulof">Merlo</h5>
+         <p class="textof">
+
+            Centro medico y de Rehabilitacion:
+            <br>
+            Mitre 1234
+            <br>
+            2664-768576
+            <a href="https://api.whatsapp.com/send/?phone=542664974803">
+               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
+                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
+            </a>
+            <br>
+            Turnos onlines
+            <br>
+
+         </p>
+      </div>
+
 
 
 </body>
 <script src="Formulario.js"></script>
+
 </html>
