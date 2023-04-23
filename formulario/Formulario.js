@@ -59,6 +59,8 @@
    /*Para cuando pise enviar se inicie la funcion validar:*/
 
    formulario.addEventListener('submit', validar)
+
+   
   
 
 }())
