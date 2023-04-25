@@ -11,10 +11,10 @@
         
             contenedor3.classList.add('agrandar');
 
+            contenedor1.classList.add('achicar2');
             contenedor2.classList.add('achicar');
-            contenedor1.classList.add('achicar');
             contenedor4.classList.add('achicar');
-            contenedor5.classList.add('achicar');
+            contenedor5.classList.add('achicar2');
            
             
            
@@ -24,10 +24,10 @@
     var igual = function(){
         contenedor3.classList.remove('agrandar');
 
+            contenedor1.classList.remove('achicar2');
             contenedor2.classList.remove('achicar');
-            contenedor1.classList.remove('achicar');
             contenedor4.classList.remove('achicar');
-            contenedor5.classList.remove('achicar');
+            contenedor5.classList.remove('achicar2');
     }
    
 
@@ -40,8 +40,8 @@ var agrandar2 = function(){
         
     contenedor4.classList.add('agrandar');
 
-    contenedor2.classList.add('achicar');
-    contenedor1.classList.add('achicar');
+    contenedor1.classList.add('achicar2');
+    contenedor2.classList.add('achicar2');
     contenedor3.classList.add('achicar');
     contenedor5.classList.add('achicar');
    
@@ -53,8 +53,8 @@ var agrandar2 = function(){
 var igual2 = function(){
 contenedor4.classList.remove('agrandar');
 
-    contenedor2.classList.remove('achicar');
-    contenedor1.classList.remove('achicar');
+    contenedor1.classList.remove('achicar2');
+    contenedor2.classList.remove('achicar2');
     contenedor3.classList.remove('achicar');
     contenedor5.classList.remove('achicar');
 }
@@ -69,9 +69,9 @@ var agrandar3 = function(){
         
     contenedor5.classList.add('agrandar');
 
-    contenedor2.classList.add('achicar');
-    contenedor1.classList.add('achicar');
-    contenedor3.classList.add('achicar');
+    contenedor1.classList.add('achicar2');
+    contenedor2.classList.add('achicar2');
+    contenedor3.classList.add('achicar2');
     contenedor4.classList.add('achicar');
    
     
@@ -82,9 +82,9 @@ var agrandar3 = function(){
 var igual3 = function(){
 contenedor5.classList.remove('agrandar');
 
-    contenedor2.classList.remove('achicar');
-    contenedor1.classList.remove('achicar');
-    contenedor3.classList.remove('achicar');
+    contenedor1.classList.remove('achicar2');
+    contenedor2.classList.remove('achicar2');
+    contenedor3.classList.remove('achicar2');
     contenedor4.classList.remove('achicar');
 }
 
@@ -97,10 +97,10 @@ var agrandar4 = function(){
         
     contenedor2.classList.add('agrandar');
 
-    contenedor4.classList.add('achicar');
     contenedor1.classList.add('achicar');
     contenedor3.classList.add('achicar');
-    contenedor5.classList.add('achicar');
+    contenedor4.classList.add('achicar2');
+    contenedor5.classList.add('achicar2');
    
     
    
@@ -110,10 +110,10 @@ var agrandar4 = function(){
 var igual4 = function(){
 contenedor2.classList.remove('agrandar');
 
-    contenedor4.classList.remove('achicar');
     contenedor1.classList.remove('achicar');
     contenedor3.classList.remove('achicar');
-    contenedor5.classList.remove('achicar');
+    contenedor4.classList.remove('achicar2');
+    contenedor5.classList.remove('achicar2');
 }
 
 
@@ -126,9 +126,9 @@ var agrandar5 = function(){
     contenedor1.classList.add('agrandar');
 
     contenedor2.classList.add('achicar');
-    contenedor4.classList.add('achicar');
-    contenedor3.classList.add('achicar');
-    contenedor5.classList.add('achicar');
+    contenedor3.classList.add('achicar2');
+    contenedor4.classList.add('achicar2');
+    contenedor5.classList.add('achicar2');
    
     
    
@@ -138,10 +138,10 @@ var agrandar5 = function(){
 var igual5 = function(){
 contenedor1.classList.remove('agrandar');
 
-    contenedor4.classList.remove('achicar');
-    contenedor1.classList.remove('achicar');
-    contenedor3.classList.remove('achicar');
-    contenedor5.classList.remove('achicar');
+    contenedor2.classList.remove('achicar');
+    contenedor3.classList.remove('achicar2');
+    contenedor4.classList.remove('achicar2');
+    contenedor5.classList.remove('achicar2');
 }
 
 

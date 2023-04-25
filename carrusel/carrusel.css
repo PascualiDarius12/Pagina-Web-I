@@ -26,7 +26,7 @@
     font-size: 15px;
     color: ghostwhite;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-   
+    
 
 }
 
@@ -41,16 +41,16 @@
 
 
 .agrandar{
-    transform: scale(1.5);
+    scale: 1.5;
     z-index: 100;
-    margin: 0 1px;
+    
     transition: all 0.5s;
    
     
 }
 
 .achicar{
-    transform: scale(1.2);
+    scale: 1.2;
     opacity: 0.9;
     z-index: 99;
     transition: all 0.5s;
@@ -69,6 +69,46 @@
 
 }
 
+.moverder{
+    z-index: 99;
+    transition: all 0.9s;
+    transform: translate(205px,0)
+    
+    
+}
+
+.moverizq{
+    transition: all 0.5s;
+    transform: translate(-307.5px,0) ;
+}
+
+.movertododer{
+    z-index: 96;
+    transition: all 1s;
+    transform: translate(-1230px,0);
+}
+.contenedorflechas{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+ 
+   position: relative;
+   top: 500px;
+
+   
+}
+
+
+.contenedorflechas i{
+font-size: 40px;
+color: rgb(103, 96, 96);
+}
+
+.contenedorflechas button{
+    border-style: none;
+    background-color: #ffffff;
+    margin: 0 20px;
+}
 
 
 
@@ -81,6 +121,4 @@
     
     
   }
-
-
 }
