@@ -1,4 +1,4 @@
-.contenedorServicios{
+.contenedorServicios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,18 +6,18 @@
     position: absolute;
     width: 100%;
     padding-top: 200px;
-    
-    
-   
-   
+
+
+
+
 }
 
 
-.contenedorServicios div{
+.contenedorServicios div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     border-radius: 5%;
     height: 220px;
     width: 305px;
@@ -26,85 +26,84 @@
     font-size: 15px;
     color: ghostwhite;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
 
 }
 
-.contenedorServicios div img{
+.contenedorServicios div img {
     height: 180px;
     width: 280px;
     border-radius: 5%;
-    
-   
+
+
 
 }
 
 
-.agrandar{
+.agrandar {
     scale: 1.5;
     z-index: 100;
-    
+
     transition: all 0.5s;
-   
-    
+
+
 }
 
-.achicar{
+.achicar {
     scale: 1.2;
-    opacity: 0.9;
+
     z-index: 99;
     transition: all 0.5s;
-   
-    
+
+
 }
 
-.achicar2{
+.achicar2 {
 
-    
-    opacity: 0.85;
+
+
     z-index: 98;
     transition: all 0.5s;
-    
-    
+
+
 
 }
 
-.moverder{
-    
+.moverder {
+
     transition: all 0.9s;
-    transform: translate(205px,0)
-    
-    
+    transform: translate(205px, 0)
 }
 
-.moverizq{
+.moverizq {
     transition: all 0.5s;
-    transform: translate(-307.5px,0) ;
+    transform: translate(-307.5px, 0);
 }
 
-.movertododer{
-    
+.movertododer {
+
     transition: all 1s;
-    transform: translate(-1230px,0);
+    transform: translate(-1230px, 0);
 }
-.contenedorflechas{
+
+.contenedorflechas {
     display: flex;
     align-items: center;
-    justify-content:center;
- 
-   position: relative;
-   top: 500px;
+    justify-content: center;
 
-   
+    position: relative;
+    top: 500px;
+
+
 }
 
 
-.contenedorflechas i{
-font-size: 40px;
-color: rgb(103, 96, 96);
+.contenedorflechas i {
+    font-size: 40px;
+    color: rgb(103, 96, 96);
 }
 
-.contenedorflechas button{
+.contenedorflechas button {
     border-style: none;
     background-color: #ffffff;
     margin: 0 20px;
@@ -113,12 +112,12 @@ color: rgb(103, 96, 96);
 
 
 @media screen and (max-width: 500px) {
-  .contenedorServicios{
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
+    .contenedorServicios {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
 }
