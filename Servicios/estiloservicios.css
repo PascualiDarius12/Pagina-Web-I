@@ -6,6 +6,7 @@ body {
 
 }
 
+
 .contenedorServicios {
     width: 100%;
 }
@@ -35,6 +36,14 @@ body {
     background-color:#0088ff;
    
 
+}
+
+.servicio3:hover{
+
+    z-index: 4;
+    cursor: pointer;
+    background-color:#1ba81b;
+    ;
 }
 
 .servicios div img {
@@ -118,14 +127,19 @@ body {
 .contenedorflechas{
  
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+    width: 100%;
+    bottom: 220px;
+    
 }
 
 .contenedorflechas button {
-    
+    cursor: pointer;
     font-size: 40px;
-    margin: 0 50px;
+    margin: 0 550px;
+    width: 100%;
     background: transparent;
     border-style: none;
     color: rgba(0, 0, 0, 0.229);

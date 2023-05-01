@@ -291,14 +291,14 @@
 .contenedorfooterxl {
 
 
-    display: flex;
+   display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     justify-content: space-around;
     background-color: #000e1a;
-    bottom: 1;
+    bottom: 0;
 
 }
 
