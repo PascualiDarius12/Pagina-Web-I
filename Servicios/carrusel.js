@@ -1,153 +1,204 @@
-(function () {
+var servicio1 = document.getElementById('servicio1');
+var servicio2 = document.getElementById('servicio2');
+var servicio3 = document.getElementById('servicio3');
+var servicio4 = document.getElementById('servicio4');
+var servicio5 = document.getElementById('servicio5');
+var botizq = document.getElementById('izq');
+var botder = document.getElementById('der');
+//const variablesCss = document.documentElement.style; // traer todas las variables :root del css a esta variable
 
-    var contenedor1 = document.getElementById('contenedor1');
-    var contenedor2 = document.getElementById('contenedor2');
-    var contenedor3 = document.getElementById('contenedor3');
-    var contenedor4 = document.getElementById('contenedor4');
-    var contenedor5 = document.getElementById('contenedor5');
+var mover = 0;
+
+const arreglo = new Array(servicio1, servicio2, servicio3, servicio4, servicio5);
+var i = 0;
+
+
+//funcion para remover y agregar las claces servicios y asi generar una especie de trancicion.
+var girarDer = function () {
     
 
-    var agrandar = function(){
-        
-            contenedor3.classList.add('agrandar');
 
-            contenedor1.classList.add('achicar2');
-            contenedor2.classList.add('achicar');
-            contenedor4.classList.add('achicar');
-            contenedor5.classList.add('achicar2');
-           
-            
-           
-    }
+    arreglo[i].classList.remove('servicio1');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio3');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
 
 
-    var igual = function(){
-        contenedor3.classList.remove('agrandar');
+    arreglo[i].classList.add('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
 
-            contenedor1.classList.remove('achicar2');
-            contenedor2.classList.remove('achicar');
-            contenedor4.classList.remove('achicar');
-            contenedor5.classList.remove('achicar2');
-    }
-   
+    arreglo[i].classList.add('servicio3');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
 
+    arreglo[i].classList.add('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
 
-contenedor3.addEventListener('mouseover', agrandar)
-contenedor3.addEventListener('mouseout', igual)
+    arreglo[i].classList.add('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
 
-
-var agrandar2 = function(){
-        
-    contenedor4.classList.add('agrandar');
-
-    contenedor1.classList.add('achicar2');
-    contenedor2.classList.add('achicar2');
-    contenedor3.classList.add('achicar');
-    contenedor5.classList.add('achicar');
-   
+    arreglo[i].classList.add('servicio1');
     
-   
-}
-
-
-var igual2 = function(){
-contenedor4.classList.remove('agrandar');
-
-    contenedor1.classList.remove('achicar2');
-    contenedor2.classList.remove('achicar2');
-    contenedor3.classList.remove('achicar');
-    contenedor5.classList.remove('achicar');
-}
 
 
 
-contenedor4.addEventListener('mouseover', agrandar2)
-contenedor4.addEventListener('mouseout', igual2)
-
-
-var agrandar3 = function(){
-        
-    contenedor5.classList.add('agrandar');
-
-    contenedor1.classList.add('achicar2');
-    contenedor2.classList.add('achicar2');
-    contenedor3.classList.add('achicar2');
-    contenedor4.classList.add('achicar');
-   
-    
-   
-}
-
-
-var igual3 = function(){
-contenedor5.classList.remove('agrandar');
-
-    contenedor1.classList.remove('achicar2');
-    contenedor2.classList.remove('achicar2');
-    contenedor3.classList.remove('achicar2');
-    contenedor4.classList.remove('achicar');
-}
-
-
-
-contenedor5.addEventListener('mouseover', agrandar3)
-contenedor5.addEventListener('mouseout', igual3)
-
-var agrandar4 = function(){
-        
-    contenedor2.classList.add('agrandar');
-
-    contenedor1.classList.add('achicar');
-    contenedor3.classList.add('achicar');
-    contenedor4.classList.add('achicar2');
-    contenedor5.classList.add('achicar2');
-   
-    
-   
-}
-
-
-var igual4 = function(){
-contenedor2.classList.remove('agrandar');
-
-    contenedor1.classList.remove('achicar');
-    contenedor3.classList.remove('achicar');
-    contenedor4.classList.remove('achicar2');
-    contenedor5.classList.remove('achicar2');
-}
-
-
-
-contenedor2.addEventListener('mouseover', agrandar4)
-contenedor2.addEventListener('mouseout', igual4)
-
-var agrandar5 = function(){
-        
-    contenedor1.classList.add('agrandar');
-
-    contenedor2.classList.add('achicar');
-    contenedor3.classList.add('achicar2');
-    contenedor4.classList.add('achicar2');
-    contenedor5.classList.add('achicar2');
-   
-    
-   
-}
-
-
-var igual5 = function(){
-contenedor1.classList.remove('agrandar');
-
-    contenedor2.classList.remove('achicar');
-    contenedor3.classList.remove('achicar2');
-    contenedor4.classList.remove('achicar2');
-    contenedor5.classList.remove('achicar2');
-}
-
-
-
-contenedor1.addEventListener('mouseover', agrandar5)
-contenedor1.addEventListener('mouseout', igual5)
 
     
-}())
+
+
+
+
+
+}
+
+var girarIzq = function () {
+
+    
+    //variablesCss.setProperty('-mover-', '50%') //asignar vamor a la variable :root "-mover-" para que cambie en css
+    
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+
+    arreglo[i].classList.remove('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio3');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio1');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+
+    arreglo[i].classList.add('servicio1');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio3');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+    
+
+
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+botder.addEventListener('click', girarDer)
+botizq.addEventListener('click', girarIzq)
+
+
+
+
+

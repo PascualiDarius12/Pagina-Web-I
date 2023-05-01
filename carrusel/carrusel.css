@@ -24,7 +24,7 @@ body {
     
     display: flex;
    align-items: center;
-   padding-top: 2%;
+   padding-top: 1%;
     flex-direction: column;
     position: absolute;
     opacity: 0;
@@ -32,15 +32,15 @@ body {
     width: 300px;
     border-radius: 15px;
     transition: all 1s ease-in-out;
-    background-color: rgb(0, 68, 255);
+    background-color:#0088ff;
    
 
 }
 
 .servicios div img {
     position: absolute;
-    height: 75%;
-    width: 90%;
+    height: 80%;
+    width: 95%;
     border-radius: 15px;
 }
 
@@ -48,8 +48,14 @@ body {
     position: absolute;
     bottom: 0.5%;
     font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+   
     
-    color: ghostwhite;
+    
+}
+
+:root{
+    -mover-: 0;
 }
 
 .servicio1 {
@@ -71,9 +77,10 @@ body {
 }
 
 .servicio2 {
-    left: 30%;
+    left: 25%;
     transform: translateX(-50%);
-    font-size: 15px;
+    
+    
 }
 
 .servicio3 {
@@ -84,13 +91,18 @@ body {
     transform: translateX(-50%);
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 3;
-    font-size: 20px;
+    
+    
+    
+   
+    
+    
 }
 
 .servicio4 {
-    left: 70%;
+    left: 75%;
     transform: translateX(-50%);
-    font-size: 15px;
+    
 }
 
 .servicio5 {
@@ -100,6 +112,8 @@ body {
     z-index: 0;
     
 }
+
+
 
 .contenedorflechas{
  
