@@ -12,6 +12,10 @@
 
 }
 
+.navegador:hover{
+    background-color: #ffffff;
+}
+
 
 
 
@@ -36,7 +40,11 @@
 }
 
 .lista a:hover {
-   font-size: 16px;
+   border-style: solid;
+   border-color: #4242421b;
+   border-radius: 5px;
+   padding: 8px;
+   border-width: 4px;
    
    
 }
@@ -159,7 +167,7 @@
     align-items: center;
     justify-content: center;
     height:100%;
-    width: 35%;
+    width: 100%;
     
     z-index: 1;
     background-color: #0000004d;
@@ -184,8 +192,8 @@
     font-size: 26px;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    position: relative;
-    left: 20px;
+    position: absolute;
+   
     margin: 0;
 }
 
@@ -194,11 +202,11 @@
     font-size: 16px;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    text-align: justify;
+    text-align: center;
     margin-top: 60px;
     width: 70%;
     line-height: 1.7;
-    text-indent: 100px;
+   
 }
 
 
