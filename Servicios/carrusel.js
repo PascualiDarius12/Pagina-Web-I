@@ -5,18 +5,40 @@ var servicio4 = document.getElementById('servicio4');
 var servicio5 = document.getElementById('servicio5');
 var botizq = document.getElementById('izq');
 var botder = document.getElementById('der');
+var titulo = document.getElementById('titulo')
+var texto = document.getElementById('texto')
 //const variablesCss = document.documentElement.style; // traer todas las variables :root del css a esta variable
+
+
 
 var mover = 0;
 
-const arreglo = new Array(servicio1, servicio2, servicio3, servicio4, servicio5);
+const arreglo = new Array(servicio1, servicio2, servicio3, servicio4, servicio5);//arreglo para las tarjetas de servcios
 var i = 0;
+//titulos
+const titulo1 = "Kinesiologia";
+const titulo2 = "Fonoaudiologia";
+const titulo3 = "Psicologia";
+const titulo4 = "Hidroterapia";
+const titulo5 = "Medicina";
+//textos
+const texto1 = "La kinesiología o quinesilogía​​ es el estudio científico del movimiento del cuerpo. La kinesiología aborda los principios y mecanismos de movimientos fisiológicos, biomecánicos y psicodinámicos."
+const texto2 = "Las Fonoaudiólogas y los Fonoaudiólogos son profesionales encargados de prevención, promoción, evaluación, diagnóstico, tratamiento intervención e investigación en el ámbito de la de la comunicación, lenguaje, habla, voz, sistema auditivo y vestibular, deglución y motricidad orofacial."
+const texto3 = "La Psicología es una carrera que provee la capacidad de comprender los diferentes comportamientos humanos brindando distintas formas de abordajes y enfoques en la búsqueda de solucionar sus problemas y mejorar su calidad de vida, preparando a nuestros egresados para elegir entre diferentes caminos profesionales."
+const texto4 = "La terapia acuática o hidroterapia es un tipo de tratamiento que utiliza el agua para relajar y fortalecer las articulaciones, aliviar posibles dolores y promover el movimiento corporal."
+const texto5 = "La medicina ​ es la ciencia de la salud dedicada a la prevención, diagnóstico, pronóstico y tratamiento de las enfermedades, lesiones y problemas de salud de los seres humanos."
+//arreglo para los textos de cada servicio
+
+const textos = new Array(texto1,texto2,texto3,texto4,texto5);
+
+//arreglo para los titulos de cada servicio
+const titulos = new Array(titulo1,titulo2,titulo3,titulo4,titulo5);
 
 
 //funcion para remover y agregar las claces servicios y asi generar una especie de trancicion.
 var girarDer = function () {
     
-
+  
 
     arreglo[i].classList.remove('servicio1');
     if(i<4){
@@ -55,6 +77,7 @@ var girarDer = function () {
 
 
     arreglo[i].classList.add('servicio2');
+    
     if(i<4){
         i++;
      }else{
@@ -62,6 +85,10 @@ var girarDer = function () {
      }
 
     arreglo[i].classList.add('servicio3');
+    titulo.innerHTML=titulos[i];
+    texto.innerHTML=textos[i];
+    
+    
     if(i<4){
         i++;
      }else{
@@ -69,6 +96,7 @@ var girarDer = function () {
      }
 
     arreglo[i].classList.add('servicio4');
+    
     if(i<4){
         i++;
      }else{
@@ -76,6 +104,7 @@ var girarDer = function () {
      }
 
     arreglo[i].classList.add('servicio5');
+    
     if(i<4){
         i++;
      }else{
@@ -83,6 +112,7 @@ var girarDer = function () {
      }
 
     arreglo[i].classList.add('servicio1');
+    
     
 
 
@@ -159,6 +189,8 @@ var girarIzq = function () {
      }
 
     arreglo[i].classList.add('servicio3');
+    titulo.innerHTML=titulos[i];
+    texto.innerHTML=textos[i];
     if(i<4){
         i++;
      }else{
@@ -195,8 +227,8 @@ var girarIzq = function () {
 
 
 
-botder.addEventListener('click', girarDer)
-botizq.addEventListener('click', girarIzq)
+botder.addEventListener('click', girarIzq)
+botizq.addEventListener('click', girarDer)
 
 
 

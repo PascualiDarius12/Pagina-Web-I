@@ -6,15 +6,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #00000000;
+    background-color: #ffffff;
     padding: 0 200px 0 0;
     top: 0;
 
 }
 
-.navegador:hover{
-    background-color: #ffffff;
-}
 
 
 
@@ -27,25 +24,24 @@
     display: flex;
     gap: 25px;
     margin-right: 15px;
+    padding: 10px 0;
 }
 
 .lista a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.819);
+    font-weight:  normal;
     font-size: 15px;
     line-height: 1.5rem;
     letter-spacing: 0.025cm;
     margin-left: 25px;
+    
 }
 
 .lista a:hover {
-   border-style: solid;
-   border-color: #4242421b;
-   border-radius: 5px;
-   padding: 8px;
-   border-width: 4px;
    
+   color: #0157c1;
    
 }
 
@@ -136,12 +132,13 @@
 
 
 .contenedorImgPrincipal{
+    padding-top: 30px;
  
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: blueviolet;
+    
     z-index: 0;
    
 }
@@ -170,31 +167,35 @@
     width: 100%;
     
     z-index: 1;
-    background-color: #0000004d;
+    background-color: #00000059;
     
     
 }
 
 
 .textoBienve h1{
-    font-family: benton-sans,sans-serif;
-    font-size: 60px;
+    font-family:sans-serif;
+    font-size: 50px;
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin: 0;
-    
-    
+    letter-spacing: 0.02em;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
+    
+    
+
 
 
 .textoBienve h2{
-    font-family: benton-sans,sans-serif;
-    font-size: 26px;
-    font-weight: 700;
+    font-family:sans-serif;
+    font-size: 20px;
+   letter-spacing: 0.09rem;
+   font-weight: 10;
     color: rgb(255, 255, 255);
-    position: absolute;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
    
-    margin: 0;
+    margin: 20px;
 }
 
 .textoBienve h3{
@@ -209,6 +210,27 @@
    
 }
 
+.botoninicio{
+    padding: 15px 60px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: rgb(0, 186, 0);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.botoninicio:hover{
+    background-color: darkgreen;
+    transition: all 0.8s ease-in-out;
+}
+.botoninicio a{
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
 
 
 

@@ -43,6 +43,7 @@
    
 
     window.addEventListener('scroll',aparece)
+    window.addEventListener('focus')
 
 
 
