@@ -24,25 +24,25 @@
     display: flex;
     gap: 25px;
     margin-right: 15px;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .lista a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.819);
-    font-weight:  normal;
+    font-weight: normal;
     font-size: 15px;
     line-height: 1.5rem;
     letter-spacing: 0.025cm;
     margin-left: 25px;
-    
+
 }
 
 .lista a:hover {
-   
-   color: #0157c1;
-   
+
+    color: #0157c1;
+
 }
 
 #tresrayas,
@@ -50,14 +50,14 @@
     display: none;
 }
 
-.navegador a i{
- font-size: 40px;
- padding-left: 8px;
- margin: 0;
- color: #0157c1;
- 
+.navegador a i {
+    font-size: 40px;
+    padding-left: 8px;
+    margin: 0;
+    color: #0157c1;
+
 }
-   
+
 
 
 
@@ -124,57 +124,57 @@
     right: 12px;
     background-color: rgb(25, 167, 18);
     transition: all 1s;
-    
+
 
 
 
 }
 
 
-.contenedorImgPrincipal{
+.contenedorImgPrincipal {
     padding-top: 30px;
- 
+
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    
+
     z-index: 0;
-   
+
 }
 
 
 
 
 .Imagen {
- position: absolute;
- width: 100%;
- height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
- 
- 
-    
+
+
+
 
 }
 
-.textoBienve{
+.textoBienve {
     display: flex;
-   position: absolute;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100%;
+    height: 100%;
     width: 100%;
-    
+
     z-index: 1;
     background-color: #00000059;
-    
-    
+
+
 }
 
 
-.textoBienve h1{
-    font-family:sans-serif;
+.textoBienve h1 {
+    font-family: sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -182,24 +182,24 @@
     letter-spacing: 0.02em;
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
-    
-    
 
 
 
-.textoBienve h2{
-    font-family:sans-serif;
+
+
+.textoBienve h2 {
+    font-family: sans-serif;
     font-size: 20px;
-   letter-spacing: 0.09rem;
-   font-weight: 10;
+    letter-spacing: 0.09rem;
+    font-weight: 10;
     color: rgb(255, 255, 255);
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-   
+
     margin: 20px;
 }
 
-.textoBienve h3{
-    font-family:sans-serif;
+.textoBienve h3 {
+    font-family: sans-serif;
     font-size: 16px;
     font-weight: 100;
     color: rgb(255, 255, 255);
@@ -207,10 +207,10 @@
     margin-top: 60px;
     width: 70%;
     line-height: 1.7;
-   
+
 }
 
-.botoninicio{
+.botoninicio {
     padding: 15px 60px;
     border-style: none;
     border-radius: 30px;
@@ -219,13 +219,14 @@
     cursor: pointer;
 }
 
-.botoninicio:hover{
+.botoninicio:hover {
     background-color: darkgreen;
     transition: all 0.8s ease-in-out;
 }
-.botoninicio a{
+
+.botoninicio a {
     text-decoration: none;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
@@ -237,65 +238,65 @@
 .contenedorTarjetas {
 
     display: flex;
-    
-    
+    flex-direction: row;
+
     position: absolute;
     width: 100%;
     height: 750px;
     top: 800px;
-   margin-top: 0;
-   /* 
+    margin-top: 0;
+    /* 
     background-image: url("Imagenes/doctor-trabajo.jpg");
     background-size: cover;
     */
     transition: all 2s;
-   
+
 
 
 
 
 }
 
-.cajatarjetas{
+.cajatarjetas {
     position: absolute;
     height: 100%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-   display: flex;
-   flex-direction: row;
-   opacity: 0;
-   transition: 4s;
-   
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: 4s;
+
 }
 
 
 .visible {
     opacity: 1;
-    
+
 
 
 
 }
 
 .tarjetas {
-    
+
     width: 300px;
     height: 450px;
     text-align: center;
-   
-   
-    
-    
+
+
+
+
 
 }
 
 
 .tarjetas i {
-   color: #0157c1;
-   font-size: 200px;
-   
-    
+    color: #0157c1;
+    font-size: 200px;
+
+
 
 }
 
@@ -320,112 +321,162 @@
     transform: scale(1.1);
 }
 
-.contenedorSm2 {
-   display: flex;
-   position: absolute;
-   width: 100%;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   top: 1500px;
-
-}
-
-.tituloSm2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: #0088ff;
-    text-align: center;
-}
-
-.textoSm2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.819);
-    line-height: 30px;
-    text-align: center;
-}
-
-.fraseSm2 {
-    margin-top: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: #0188ff;
-    line-height: 30px;
-    text-align: center;
-
-}
-
-
-.contenedorfooterxl {
-
-
-   display: flex;
-    flex-direction: row;
-    align-items: center;
+.contenedorcontactos {
+    display: flex;
     position: absolute;
+    top: 1600px;
+   
     width: 100%;
-    justify-content: space-around;
-    background-color: #000e1a;
+    height: 100%;
+    justify-content: center;
+
+
+}
+
+.contenedorformycontac {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+
+    
+}
+
+.contenedorform {
+
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0;
+}
+
+.formulario input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid  #0157c12e;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    line-height: 35px;
+    outline: none;
+    padding: 20px 0;
+}
+.formulario textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid  #0157c12e;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    line-height: 35px;
+    outline: none;
+    height: 100px;
+
+}
+/*quitar foco con el outline*/
+.formulario span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #0157c1;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.formulario div {
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.formulario button{
+    position: absolute;
+    padding: 2px 40px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: rgb(0, 186, 0);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+    top: 430px;
+    left: 120px;
+    width: 20%;
+}
+
+
+.contacto {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 94%;
+    width: 50%;
+    background-color: #0157c1;
+    padding-top: 30px;
+
+
+
+
+
+}
+
+.contacto span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-weight: 100;
+}
+
+.contacto p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+}
+
+.banda{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-color: bisque;
     bottom: 0;
+    z-index: 0;
 
-}
-
-.contenedordires {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: dimgrey;
-    width: 300px;
-    line-height: 20px;
-
+    
 }
 
 
-.titulof {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #0088ff;
-
-
-}
-
-
-
-.imgfooter {
-    border-radius: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 200px;
-    height:200px;
-
-}
-
-.imgwsp {
-    transition: transform .2s;
-}
-
-.imgwsp:hover {
-    transform: scale(1.1);
-
-}
 
 body {
     margin: 0;
     padding: 0 0 0 0;
     border: 0;
-    vertical-align: baseline;
+    display: block;
 
 
 }
 
 
 @media screen and (min-width: 500px) {
-    .contenedorTarjetas {
-
-        flex-direction: row;
-
-
-    }
+   
 
     .contenedorMenu {
         visibility: visible;
@@ -454,7 +505,7 @@ body {
 
     }
 
-    
+
 
 
 
@@ -510,10 +561,12 @@ body {
 
     }
 
-    .contenedorfooterxl {
-
+    .contenedorTarjetas{
         flex-direction: column;
 
+    }
+    .cajatarjetas{
+        flex-direction: column;
     }
 
 
