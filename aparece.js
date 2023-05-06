@@ -8,7 +8,7 @@ y una variable con el tamano de la pantalla del navegador*/
 
 var cajatarjetas = document.getElementById('scroll');
 var textoprincipal = document.getElementById('textoprincipal');
-
+var imagen = document.getElementById('imagen');
 
 var alturaPantalla = window.innerHeight;
 
@@ -48,17 +48,44 @@ var aparece = function () {
 
 window.addEventListener('scroll', aparece)
 
-
+//eststo es para que el texto aparezca 2sg despues de haber cargado la pagina
 var aparecetodo = function () {
     setTimeout(function () {
         textoprincipal.classList.add('visible');
-        
+
     }, 2000);
 
 }
 
 aparecetodo();
 
+//esto e spara que las imagenes cambien cada cierto tiempo
+var imagen1 = '../Pagina-Web-I/Imagenes/blog-que-es-la-fonoaudiologia.jpg';
+var imagen2 = '../Pagina-Web-I/Imagenes/doctor-trabajo.jpg'
+var imagen3 = '../Pagina-Web-I/Imagenes/vista-frontal-valor-cartera-mujer-forma-corazon.jpg'
+
+const arrayimagenes = new Array(imagen1, imagen2, imagen3);
+var cambairImg = function () {
+    var i = 0;
+
+    while (i < 3) {
+        setTimeout(function () {
+           
+            imagen.setAttribute('src', arrayimagenes[i])
+            i++;
+            if (i = 3) {
+                i = 0
+            }
+
+
+        }, 2000)
+    }
+}
+
+
+
+/*
+cambairImg();*/
 
 
 

@@ -356,22 +356,28 @@
 .contenedorform {
 
     height: 100%;
+    position: relative;
     width: 50%;
     background-color: #ffffff;
 }
 
 .formulario {
     display: flex;
+    position: absolute;
+    align-items: center;
+    width: 87%;
+    height: 90%;
     flex-direction: column;
     padding: 30px 30px 0;
 }
 
 .formulario input {
+    
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid  #0157c12e;
-    
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 100;
@@ -385,7 +391,7 @@
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid  #0157c12e;
-
+   width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 100;
@@ -413,7 +419,7 @@
 
 .formulario button{
     position: absolute;
-    padding: 2px 40px;
+   
     border-style: none;
     border-radius: 30px;
     background-color: rgb(0, 186, 0);
@@ -424,18 +430,19 @@
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 35px;
-    top: 430px;
-    left: 120px;
+    bottom: 0;
+   
     width: 20%;
 }
 
 
 .contacto {
+    position: relative;
     display: block;
     padding-left: 30px;
     padding-right: 30px;
     height: 94%;
-    width: 50%;
+    width: 45%;
     background-color: #0157c1;
     padding-top: 30px;
 
@@ -459,6 +466,19 @@
     font-weight: 100;
     color: rgb(255, 255, 255);
     line-height: 35px;
+}
+
+.contacto div i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.contacto div i:hover {
+   transform: scale(1.1);
 }
 
 .banda{
@@ -578,5 +598,11 @@ body {
         flex-direction: column;
     }
 
-
+    .contenedorformycontac {
+        width: 90%;
+        height: inherit;
+    }
+    .formulario button{
+        width: 50%;
+    }
 }
