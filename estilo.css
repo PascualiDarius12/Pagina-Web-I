@@ -640,35 +640,44 @@ body {
 
     
 .contenedorImgPrincipal {
-    position: absolute;
+   
     height: 100%;
+   
     
 
 }
 
 .contenedorImgPrincipal .Imagen{
     object-fit: cover;
+    
 }
 
 
     .contenedorTarjetas{
-        position: absolute;
-        padding-top: 100px;
+        
+        position: relative;
+        
         flex-direction: column;
+        width: 100%;
+        margin: 80px 0;
+       
         
 
     }
     .cajatarjetas{
+        position: absolute;
         flex-direction: column;
+        height: auto;
     }
 
     .contenedorcontactos{
-        padding-top: 400px;
+        position: absolute;
+        margin-top: 700px;
     }
 
     .contenedorformycontac {
         width: 80%;
-        height: 35%;
+        height: 50%;
     }
    
     .contenedorform{
