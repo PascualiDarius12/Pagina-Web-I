@@ -53,7 +53,7 @@ var aparecetodo = function () {
     setTimeout(function () {
         textoprincipal.classList.add('visible');
 
-    }, 2000);
+    }, 1500);
 
 }
 

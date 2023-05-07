@@ -16,10 +16,8 @@
    <nav class="navegador">
 
 
-      <a href="../index.html">
-         <img class="logo"
-            src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg"
-            alt="" width="45" height="45">
+      <a href="">
+         <i class="fas fa-heartbeat"></i>
       </a>
       <input type="checkbox" id="tresrayas">
       <label for="tresrayas"><i class="fas fa-bars" style="color: rgb(92, 94, 96);font-size: 30px;"></i></label>
@@ -29,7 +27,7 @@
       <div class="menu">
          <ul class="lista">
             <li class="botonesMenu"><a href="../index.html">Bienvenidos</a></li>
-            <li class="botonesMenu"><a href="../Servicios/servicios.html">Servicios</a></li>
+            <li class="botonesMenu"><a href="../Pagina-Web-I/Servicios/servicios.html">Servicios</a></li>
             <li class="botonesMenu"><a href="">Profesionales</a></li>
             <li class="botonesMenu"><a href="">Acceso</a></li>
 
@@ -38,40 +36,28 @@
       </div>
    </nav>
 
+   <div class="contenedorformycontac2">
+      <div class="contenedorform">
+         <form action="" class="formulario" id="formulario">
+            <span>Turnos</span>
 
 
-   <div class="contenedorformulario">
-      <div class="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
 
-         <form name="formulario" action="enviarForm.php" method="get" target="_self">
+            <input type="text" if="dni" name="dni" placeholder="Dni">
 
-            <div class="contenedorform1">
-               <label>
-                  Nombre y Apellido:
-               </label>
-               <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
 
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+            <div class="labels">
+
+
+               <label for="especialidad">Especialidad:</label>
+               <label for="obraSocial">Obra Social:</label>
             </div>
 
-
-            <div class="contenedorform2">
-               <label>
-                  DNI:
-               </label>
-               <input type="text" if="dni" name="dni" placeholder="Ingrese su DNI">
-            </div>
-
-            <div class="contenedorform3">
-               <label>
-                  Telefono (+54):
-               </label>
-               <input type="text" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono">
-            </div>
-
-            <div class="contenedorform3">
-               <label>
-                  Especialidad:
-               </label>
+            <div>
+               
+               
                <select name="especialidad" id="especialidad">
                   <option value="0">--</option>
                   <option value="1">Kinesiologia</option>
@@ -81,109 +67,47 @@
                   <option value="5">Traumatologia</option>
                   <option value="6">Neurologia</option>
                </select>
-            </div>
-
-            <div class="contenedorform3">
-               <label>
-                  Obra Social:
-               </label>
+               
+               
+               
                <select name="obraSocial" id="obraSocial">
                   <option value="0">--</option>
-
+                  
                   <option value="1">Dosep</option>
                   <option value="2">Oseca</option>
                   <option value="3">Swiss Medical</option>
                   <option value="4">Sancor</option>
                   <option value="5">Otro</option>
                </select>
+               
             </div>
 
-            <div>
-
-               <button type="submit" id="boton" name="boton">Solicitar</button>
 
 
-            </div>
 
+
+            <button type="submit">Solicitar</button>
 
          </form>
-
-
-
       </div>
-
+      <div class="contacto">
+         <span>Horario Laboral</span>
+         <p>Lunes a viernes: 8:00hs a 20:00hs <br> Sabado y Domingo: cerrado</p>
+         <hr>
+         <p>Direccion: Mitre 1234, San Luis, Argentina <br>+542664878787 <br> centrodesalud@gmail.com</p>
+         <div>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-whatsapp"></i>
+         </div>
+      </div>
    </div>
 
 
-   <footer class="contenedorfooterxl">
-      <div>
-         <img class="imgfooter" 
-            src="https://static.vecteezy.com/system/resources/previews/015/311/811/non_2x/creative-illustration-of-a-blue-medical-cross-vector.jpg"
-            alt="">
-      </div>
 
 
 
 
-      <div class="contenedordires">
-         <h5 class="titulof">San Luis</h5>
-         <p class="textof">
-
-            Centro medico y de Rehabilitacion:
-            <br>
-            Mitre 1234
-            <br>
-            2664-768576
-            <a href="https://api.whatsapp.com/send/?phone=542664974803">
-               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
-                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-            </a>
-            <br>
-            Turnos onlines
-            <br>
-
-         </p>
-      </div>
-
-      <div class="contenedordires">
-         <h5 class="titulof">Villa Mercedes</h5>
-         <p class="textof">
-
-            Centro medico y de Rehabilitacion:
-            <br>
-            Mitre 1234
-            <br>
-            2664-768576
-            <a href="https://api.whatsapp.com/send/?phone=542664974803">
-               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
-                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-            </a>
-            <br>
-            Turnos onlines
-            <br>
-
-         </p>
-      </div>
-
-      <div class="contenedordires">
-         <h5 class="titulof">Merlo</h5>
-         <p class="textof">
-
-            Centro medico y de Rehabilitacion:
-            <br>
-            Mitre 1234
-            <br>
-            2664-768576
-            <a href="https://api.whatsapp.com/send/?phone=542664974803">
-               <img class="imgwsp" href="https://api.whatsapp.com/send/?phone=542664974803"
-                  src="https://images2.imgbox.com/dd/7d/3Vf64wfS_o.png" alt="" width="50" height="30">
-            </a>
-            <br>
-            Turnos onlines
-            <br>
-
-         </p>
-      </div>
 
 
 

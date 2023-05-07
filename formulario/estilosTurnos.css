@@ -10,103 +10,45 @@ body {
 
 /*estilo del formulario*/
 
-.contenedorformulario {
 
+.contenedorformycontac2 {
     display: flex;
-    align-items: center;
-    justify-items: center;
-
-
-}
-
-.contenedorformulario .formulario {
-
-    width: auto;
-    background-color: #1ba81b;
-    display: flex;
-    margin: 70px auto;
-    border-radius: 10px;
-    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    height: 70%;
+    top: 10%;
+    left: 20%;
+    position: absolute;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-    /* background-image: url("https://cdn.pixabay.com/photo/2017/06/19/02/06/agenda-2417912_1280.png");
-    background-size: cover;
-   /* -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1); 
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); 
-    filter: FlipH;  */
+    
 
+    
 }
 
-
-.formulario form div label {
-    font-family: Arial, Helvetica, sans-serif;
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5rem;
-    letter-spacing: 0.025cm;
-    color: #ffffff;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.749);
+    line-height: 35px;
+    position: relative;
+   top: 250px;
+  left: 30px;
+  padding-right: 100px;
+    
+    
 
 }
 
-.formulario form div select {
-    border-style: none;
-    padding: 10px 0;
-    border-radius: 10px;
-    width: 100%;
-    margin: 15px 0 0;
-    outline: none;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-
+#especialidad, #obraSocial{
+    position: relative;
+    width: 150px;
+    height: 30px;
+   margin-right: 75px;
+    top: 300px;
+   left: 30px;
+   
 }
-
-.formulario form div input {
-    border-style: none;
-    padding: 10px;
-    border-radius: 10px;
-    width: 94%;
-    margin: 15px 0 0;
-    outline: none;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-}
-
-.formulario form div input:focus {
-
-    outline: solid #00ddff;
-
-}
-
-
-
-
-
-
-.formulario form div {
-    margin: 15px;
-
-}
-
-#boton {
-    display: flex;
-    margin: auto;
-    border-style: none;
-    border-radius: 5px;
-    background-color: #0088ff;
-    padding: 10px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5rem;
-    letter-spacing: 0.025cm;
-    color: #ffffff;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#boton:hover {
-    background-color: #004989;
-}
-
 
 
 
