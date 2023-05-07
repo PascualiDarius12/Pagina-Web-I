@@ -332,6 +332,7 @@
 
 .contenedorcontactos {
     display: flex;
+    
     position: absolute;
     top: 1600px;
    
@@ -441,7 +442,7 @@
     display: block;
     padding-left: 30px;
     padding-right: 30px;
-    height: 94%;
+    height: 94.148%;
     width: 45%;
     background-color: #0157c1;
     padding-top: 30px;
@@ -488,6 +489,7 @@
     background-color: bisque;
     bottom: 0;
     z-index: 0;
+    padding-bottom: 70px;
 
     
 }
@@ -498,9 +500,55 @@ body {
     margin: 0;
     padding: 0 0 0 0;
     border: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
 
 
+}
+
+.basedepag{
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+    
+    background-color: #0157c1;
+    bottom: 0;
+    padding: 0;
+    
+}
+
+.primeralinea{
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: center;
+  
+
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   font-weight: 100;
+   color: rgb(255, 255, 255);
+   line-height: 35px;
+
+   
+}
+
+.segundalinea{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   font-weight: 100;
+   color: rgb(255, 255, 255);
+   line-height: 35px;
+   
+}
+
+.basedepag p{
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -590,19 +638,62 @@ body {
 
     }
 
+    
+.contenedorImgPrincipal {
+    position: absolute;
+    height: 50%;
+    padding-top: 100px;
+
+}
+
+
     .contenedorTarjetas{
+        position: absolute;
+        
         flex-direction: column;
+        
 
     }
     .cajatarjetas{
         flex-direction: column;
     }
 
-    .contenedorformycontac {
-        width: 90%;
-        height: inherit;
+    .contenedorcontactos{
+        padding-top: 250px;
     }
+
+    .contenedorformycontac {
+        width: 80%;
+        height: 45%;
+    }
+    .contenedorform{
+       width: 70%;
+       height: 100%;
+    }
+
+    .formulario input, .formulario span, .formulario textarea{
+        font-size: 11px;
+        padding: 0;
+    }
+    .contacto{
+        width: 30%;
+        height: 91%;
+        
+    }
+   
+
+    .contacto p, .contacto span, .contacto div i{
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+
     .formulario button{
         width: 50%;
+        height: 10%;
+        
+        margin: 5% 0;
+       
+        
     }
 }
