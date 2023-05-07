@@ -668,11 +668,16 @@ body {
 
     .contenedorformycontac {
         width: 80%;
-        height: 45%;
+        height: 35%;
     }
+   
     .contenedorform{
        width: 70%;
        height: 100%;
+    }
+    .contenedorform .formulario{
+        width: 80%;
+        padding: 20px;
     }
 
     .formulario input, .formulario span, .formulario textarea{
@@ -696,7 +701,7 @@ body {
         width: 50%;
         height: 10%;
         
-        margin: 5% 0;
+        margin-bottom: 20px;
        
         
     }
