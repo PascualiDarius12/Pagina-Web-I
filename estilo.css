@@ -387,6 +387,8 @@
     outline: none;
     padding: 20px 0;
 }
+
+
 .formulario textarea{
     border-top: 0;
     border-left: 0;
@@ -689,7 +691,7 @@ body {
         padding: 20px;
     }
 
-    .formulario input, .formulario span, .formulario textarea{
+    .formulario input, .formulario span, .formulario textarea, .formulario label, .formulario div select{
         font-size: 11px;
         padding: 0;
     }

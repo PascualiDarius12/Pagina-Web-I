@@ -11,43 +11,175 @@ body {
 /*estilo del formulario*/
 
 
+
 .contenedorformycontac2 {
     display: flex;
-    flex-direction: row;
-    width: 60%;
-    height: 70%;
-    top: 10%;
-    left: 20%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-    
+    z-index: 1;
 
     
 }
 
-label{
+.contenedorTurnos{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    min-width: 60%;
+    
+    max-height: 80%;
+}
+
+.contenedorform2 {
+    
+    min-width: 50%;
+    max-width:  50%;
+   max-height: 80%;
+    background-color: #ffffff;
+}
+.contacto2 {
+   
+    
+    
+    height: 80%;
+    min-width:  45.8%;
+   
+    padding: 20px;
+    background-color: #0157c1;
+    padding-top: 30px;
+
+
+
+
+
+}
+.formulario2 {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    padding: 20px;
+   
+}
+
+
+
+.formulario2 span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #0157c1;
+    line-height: 40px;
+    font-weight: bold;
+}
+.formulario2 input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid  #0157c12e;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 100;
-    color: rgba(0, 0, 0, 0.749);
+    color: rgb(0, 0, 0);
     line-height: 35px;
-    position: relative;
-   top: 250px;
-  left: 30px;
-  padding-right: 100px;
+    outline: none;
+ 
+}
+.labels{
+    display: flex;
+    flex-direction: row;
     
+    gap: 47%;
     
+}
+
+
+.selects{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 35%;
+}
+.formulario2 div label{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.767);
+    line-height: 35px;
 
 }
 
-#especialidad, #obraSocial{
-    position: relative;
-    width: 150px;
-    height: 30px;
-   margin-right: 75px;
-    top: 300px;
-   left: 30px;
+.formulario2 div select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 35px;
+    outline: none;
+}
+
+/*quitar foco con el outline*/
+
+
+.formulario2 button{
+    border-style: none;
+    border-radius: 30px;
+    background-color:#0157c1;
+    
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+
+    
+   margin-top: 10%;
+   margin-left: 30%;
+   margin-right: 30%;
+
+   cursor: pointer;
    
+}
+
+.formulario2 button:hover{
+    background-color: rgb(0, 198, 238);
+    transition: all 0.8s ease-in-out;
+}
+
+
+
+.contacto2 span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-weight: 100;
+}
+
+.contacto2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+}
+
+.contacto2 div i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.contacto2 div i:hover {
+    transform: scale(1.1);
 }
 
 
