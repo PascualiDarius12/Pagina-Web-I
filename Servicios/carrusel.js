@@ -48,6 +48,92 @@ const urles = new Array(url1,url2,url3,url4,url5);
 
 //funcion para remover y agregar las claces servicios y asi generar una especie de trancicion.
 
+var girarDer = function () {
+        
+
+
+    arreglo[i].classList.remove('servicio1');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio3');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.remove('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+
+    arreglo[i].classList.add('servicio2');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio3');
+    titulo.innerHTML=titulos[i];
+    texto.innerHTML=textos[i];
+    imagenFondo.style.backgroundImage = urles[i];
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio4');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio5');
+    if(i<4){
+        i++;
+     }else{
+         i = 0;
+     }
+
+    arreglo[i].classList.add('servicio1');
+    
+
+
+
+
+    
+
+
+
+
+
+}
+
+
 
 var girarIzq = function () {
 
@@ -153,6 +239,7 @@ var girarIzq = function () {
 
 
 botizq.addEventListener('click', girarIzq)
+botder.addEventListener('click', girarDer)
 
 
 
