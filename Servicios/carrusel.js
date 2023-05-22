@@ -24,8 +24,8 @@ const titulo4 = "Hidroterapia";
 const titulo5 = "Medicina";
 //textos
 const texto1 = "La kinesiología​ es el estudio científico del movimiento del cuerpo. La kinesiología aborda los principios y mecanismos de movimientos fisiológicos, biomecánicos y psicodinámicos."
-const texto2 = "Las Fonoaudiólogas y los Fonoaudiólogos son profesionales encargados de prevención, promoción, evaluación, diagnóstico, tratamiento intervención e investigación en el ámbito de la de la comunicación, lenguaje, habla, voz, sistema auditivo y vestibular, deglución y motricidad orofacial."
-const texto3 = "La Psicología es una carrera que provee la capacidad de comprender los diferentes comportamientos humanos brindando distintas formas de abordajes y enfoques en la búsqueda de solucionar sus problemas y mejorar su calidad de vida, preparando a nuestros egresados para elegir entre diferentes caminos profesionales."
+const texto2 = "La Fonoaudiólogia se encarga de la prevención, promoción, evaluación, diagnóstico, tratamiento e investigación en el ámbito de la de la comunicación, lenguaje, habla, voz, sistema auditivo y vestibular, deglución y motricidad orofacial."
+const texto3 = "La Psicología es una carrera que provee la capacidad de comprender los diferentes comportamientos humanos brindando distintas formas de abordajes y enfoques en la búsqueda de solucionar sus problemas y mejorar su calidad de vida."
 const texto4 = "La terapia acuática o hidroterapia es un tipo de tratamiento que utiliza el agua para relajar y fortalecer las articulaciones, aliviar posibles dolores y promover el movimiento corporal."
 const texto5 = "La medicina ​ es la ciencia de la salud dedicada a la prevención, diagnóstico, pronóstico y tratamiento de las enfermedades, lesiones y problemas de salud de los seres humanos."
 //url's de imagenes

@@ -51,8 +51,15 @@ body {
 }
 
 
-.textoBienve2 h1 {
+.contenedortextobienve{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedortextobienve h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
     font-size: 25px;
     font-weight: 400;
     line-height: 35px;
@@ -65,8 +72,9 @@ body {
 
 
 
-.textoBienve2 h2 {
+.contenedortextobienve h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
     font-size: 15px;
     font-weight: 100;
     line-height: 35px;
@@ -113,10 +121,15 @@ body {
 
 
 .contenedorServicios {
-    position: relative;
     width: 100%;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-row: 30px;
+    margin-top: 50px;
 
-    top: 555px;
+    
 
 }
 
@@ -141,6 +154,7 @@ body {
     width: 80px;
     border-radius: 5px;
     transition: all 1s ease-in-out;
+    margin:  50px 0;
 
 
 
@@ -166,7 +180,7 @@ body {
     z-index: 1;
 
     transform: translateX(-50%);
-    left: 10%;
+    left: 24%;
 
 }
 
@@ -180,7 +194,7 @@ body {
 
 .servicio2 {
 
-    left: 17%;
+    left: 37%;
 
     transform: translateX(-50%);
 
@@ -192,7 +206,7 @@ body {
 
     height: 90px;
     width: 100px;
-    left: 24%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 3;
 
@@ -205,14 +219,14 @@ body {
 
 .servicio4 {
 
-    left: 31%;
+    left: 63%;
     transform: translateX(-50%);
 
 }
 
 .servicio5 {
 
-    left: 38%;
+    left: 76%;
 
     transform: translateX(-50%);
     z-index: 0;
@@ -220,14 +234,10 @@ body {
 }
 
 
-
-.contenedorflechas {
-
-
-    position: relative;
-    top: 530px;
-    z-index: 5;
+.contenedorflechas{
+    opacity: 0;
 }
+
 
 .izquierda {
     position: relative;
@@ -236,7 +246,7 @@ body {
     border-style: none;
     background: transparent;
     color: #ffffff6f;
-    left: 4%;
+   left: 10%;
 
 }
 
@@ -247,14 +257,15 @@ body {
     border-style: none;
     background: transparent;
     color: #ffffff6f;
-    left: 39%;
+    left: 80%;
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
 
   .contenedorServicios{
-    opacity: 0;
+    opacity: 1;
+    
   }
 
   .textoBienve2{
@@ -263,24 +274,12 @@ body {
     background: linear-gradient(90deg, rgba(1, 87, 193, 0.774) 27%, rgba(0,212,255,0) 100%);
   }
 
-  .contenedorflechas{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  .servicios div{
+    opacity: 0;
 
   }
 
-  .derecha{
-    position: static;
-  }
 
-  .izquierda{
-    position: static;
-  }
 
   .contenedorImgPrincipal2 {
     background-size: cover;
