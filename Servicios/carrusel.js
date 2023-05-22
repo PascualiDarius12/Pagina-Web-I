@@ -29,11 +29,11 @@ const texto3 = "La Psicología es una carrera que provee la capacidad de compren
 const texto4 = "La terapia acuática o hidroterapia es un tipo de tratamiento que utiliza el agua para relajar y fortalecer las articulaciones, aliviar posibles dolores y promover el movimiento corporal."
 const texto5 = "La medicina ​ es la ciencia de la salud dedicada a la prevención, diagnóstico, pronóstico y tratamiento de las enfermedades, lesiones y problemas de salud de los seres humanos."
 //url's de imagenes
-const url1 = "url('../Imagenes/kinesiologia.jpg')";
-const url2 = "url('../Imagenes/fonoaudiologia.jpg')"
-const url3 = "url('../Imagenes/psicologia.jpeg')";
-const url4 = "url('../Imagenes/hidroterapia.jpg')";
-const url5 = "url('../Imagenes/medicina.jpg')";
+const url1 = "url('../Imagenes/fondo/kinesiologia2.webp')";
+const url2 = "url('../Imagenes/fondo/fonoaudiologia2.webp')"
+const url3 = "url('../Imagenes/fondo/psicologia2.webp')";
+const url4 = "url('../Imagenes/fondo/hidroterapia2.webp')";
+const url5 = "url('../Imagenes/fondo/medicina2.webp')";
 //arreglo para los textos de cada servicio
 
 const textos = new Array(texto1,texto2,texto3,texto4,texto5);

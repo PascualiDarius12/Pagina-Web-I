@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     transition: all 1s ease-in-out;
-    background-image: url("../Imagenes/psicologia.jpeg");
+    background-image: url("../Imagenes/fondo/psicologia2.webp");
     background-size: cover;
 
 

@@ -20,7 +20,7 @@ body {
     height: 100%;
     position: absolute;
     z-index: 0;
-    background-image: url(../Imagenes/medicina.jpg);
+    background-image: url(../Imagenes/medicina.webp);
     background-size: cover;
     
 }
