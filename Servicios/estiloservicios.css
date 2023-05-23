@@ -275,11 +275,17 @@ body {
   }
 
   .servicios div{
+    display: none;
     opacity: 0;
 
   }
-
-
+.servicios{
+    justify-content: space-evenly;
+}
+.izquierda, .derecha{
+    left: 0;
+    z-index: 5;
+}
 
   .contenedorImgPrincipal2 {
     background-size: cover;
