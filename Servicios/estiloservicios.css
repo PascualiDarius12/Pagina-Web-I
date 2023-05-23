@@ -65,6 +65,7 @@ body {
     line-height: 35px;
     color: rgb(255, 255, 255);
     margin: 0;
+   
 
 
 }
@@ -76,6 +77,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: 15px;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.642);
     font-weight: 100;
     line-height: 35px;
     color: rgb(255, 255, 255);
@@ -100,7 +102,8 @@ body {
 
     padding: 0 20px;
 
-    background-color: rgb(0, 186, 0);
+    background: rgb(18,255,0);
+    background: linear-gradient(90deg, rgba(18,255,0,1) 0%, rgba(15,171,3,1) 100%);
 
 
 
@@ -114,7 +117,8 @@ body {
 }
 
 .boton:hover {
-    background-color: darkgreen;
+    background: rgb(18,255,0);
+    background: linear-gradient(90deg,  rgba(15,171,3,1) 0%,  rgba(18,255,0,1) 100%);
     transition: all 0.8s ease-in-out;
 
 }
@@ -270,7 +274,7 @@ body {
 
   .textoBienve2{
     width: 100%;
-    background: rgb(1,87,193);
+    background: #0157c1;
     background: linear-gradient(90deg, rgba(1, 87, 193, 0.774) 27%, rgba(0,212,255,0) 100%);
   }
 
@@ -292,5 +296,9 @@ body {
     background-position: 60% 50%;
   }
 
+  #texto{
+    font-size: 15px;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.785);
+  }
 
 }
