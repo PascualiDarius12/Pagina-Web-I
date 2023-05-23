@@ -238,10 +238,6 @@ body {
 }
 
 
-.contenedorflechas{
-    opacity: 0;
-}
-
 
 .izquierda {
     position: relative;
@@ -263,6 +259,10 @@ body {
     color: #ffffff6f;
     left: 80%;
 
+}
+
+.servicios button:hover{
+    color: aliceblue;
 }
 
 @media screen and (max-width: 1000px) {
