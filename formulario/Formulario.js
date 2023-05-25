@@ -67,9 +67,15 @@
     let fnombre = document.forms["formu"]["nombre"];
     let fdni = document.forms["formu"]["dni"];
     let ftelefono = document.forms["formu"]["telefono"];
+    let Ctextoerror = document.getElementById('contenedormsjerror');
+    let textoerror = document.getElementById('textoerror');
 
     if (fnombre.value == "") {
-      fnombre.style.borderBottom = "2px solid red"
+      fnombre.style.borderBottom = "1px solid red"
+      Ctextoerror.style.opacity = '1'
+      textoerror.innerHTML = "complete sus datos"
+      textoerror.style.backgroundColor = "#c101014a";
+        textoerror.style.borderColor= "red"
       
     }else{
         fnombre.style.borderBottom = "2px solid #01c1012e" 
@@ -77,17 +83,33 @@
 
     
     if (fdni.value == "") {
-      fdni.style.borderBottom = "2px solid red"
+      fdni.style.borderBottom = "1px solid red"
+      Ctextoerror.style.opacity = '1'
+      textoerror.innerHTML = "complete sus datos"
+      textoerror.style.backgroundColor = "#c101014a";
+        textoerror.style.borderColor= "red"
       
     }else{
         fdni.style.borderBottom = "2px solid #01c1012e"
     }
     
     if (ftelefono.value == "") {
-      ftelefono.style.borderBottom = "2px solid red"
+      ftelefono.style.borderBottom = "1px solid red"
+      Ctextoerror.style.opacity = '1'
+      textoerror.innerHTML = "complete sus datos"
+      textoerror.style.backgroundColor = "#c101014a";
+        textoerror.style.borderColor= "red"
       
     }else{
         ftelefono.style.borderBottom = "2px solid #01c1012e"
+    }
+
+    if (fdni.value != "" && fnombre.value != "" && ftelefono.value != "" ){
+        textoerror.innerHTML = "Turno agendado";
+        textoerror.style.backgroundColor = "#21c1014a";
+        textoerror.style.borderColor= "green"
+
+
     }
 
     return false;
