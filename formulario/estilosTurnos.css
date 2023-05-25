@@ -199,6 +199,18 @@ body {
        
     }
 
+    .contenedorform2{
+      width: 400px;
+      padding: 20px;
+      max-width: none;
+      min-width: none;
+    }
+
+    .contacto2{
+        width: 400px;
+        padding: 20px;
+    }
+
    .formulario2 div{
     justify-content: center;
    }
