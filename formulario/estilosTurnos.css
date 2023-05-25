@@ -22,34 +22,35 @@ body {
     z-index: 0;
     background-image: url(../Imagenes/medicina.webp);
     background-size: cover;
-    
+
 }
 
-.contenedorTurnos{
+.contenedorTurnos {
     position: absolute;
-    display:flex;
+    display: flex;
     align-items: center;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
     min-width: 60%;
-    
+
     max-height: 80%;
 }
 
 .contenedorform2 {
-    
+
     min-width: 50%;
-    max-width:  50%;
-   max-height: 80%;
+    max-width: 50%;
+    max-height: 80%;
     background-color: #ffffff;
 }
+
 .contacto2 {
-   
-    
-    
+
+
+
     height: 80%;
-    min-width:  45.8%;
-   
+    min-width: 45.8%;
+
     padding: 20px;
     background-color: #0157c1;
     padding-top: 30px;
@@ -59,14 +60,15 @@ body {
 
 
 }
+
 .formulario2 {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
-    
+
 
     padding: 20px;
-   
+
 }
 
 
@@ -78,11 +80,12 @@ body {
     line-height: 40px;
     font-weight: bold;
 }
+
 .formulario2 input {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px solid  #0157c12e;
+    border-bottom: 2px solid #0157c12e;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -90,24 +93,26 @@ body {
     color: rgb(0, 0, 0);
     line-height: 35px;
     outline: none;
- 
+
 }
-.labels{
+
+.labels {
     display: flex;
     flex-direction: row;
-    
+
     gap: 47%;
-    
+
 }
 
 
-.selects{
+.selects {
     display: flex;
     flex-direction: row;
-    
+
     gap: 35%;
 }
-.formulario2 div label{
+
+.formulario2 div label {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -117,13 +122,13 @@ body {
 
 }
 
-.formulario2 div select{
+.formulario2 div select {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 100;
     line-height: 35px;
     outline: none;
-    
+
 }
 
 
@@ -131,11 +136,11 @@ body {
 /*quitar foco con el outline*/
 
 
-.formulario2 button{
+.formulario2 button {
     border-style: none;
     border-radius: 30px;
-    background-color:#0157c1;
-    
+    background-color: #0157c1;
+
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -143,16 +148,16 @@ body {
     color: rgb(255, 255, 255);
     line-height: 35px;
 
-    
-   margin-top: 20%;
-   margin-left: 30%;
-   margin-right: 30%;
 
-   
-   
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+
+
 }
 
-.formulario2 button:hover{
+.formulario2 button:hover {
     background-color: rgb(0, 198, 238);
     transition: all 0.8s ease-in-out;
 }
@@ -191,38 +196,40 @@ body {
 
 @media screen and (max-width: 500px) {
 
-    .contenedorTurnos{
+    .contenedorTurnos {
         width: 100%;
         flex-direction: column-reverse;
         box-shadow: none;
-        
-       
+
+
     }
 
-    .contenedorform2{
-      width: 400px;
-      padding: 20px;
-      max-width: none;
-      min-width: none;
+    .contenedorform2 {
+        width: 400px;
+        padding: 20px;
+        max-width: none;
+        min-width: none;
     }
 
-    .contacto2{
+    .contacto2 {
+        max-width: none;
+        min-width: none;
         width: 400px;
         padding: 20px;
     }
 
-   .formulario2 div{
-    justify-content: center;
-   }
+    .formulario2 div {
+        justify-content: center;
+    }
 
-   .selects{
-    gap: 0;
-    
-   }
-   .labels{
-    gap:10%
-   }
+    .selects {
+        gap: 0;
 
-   
+    }
+
+    .labels {
+        gap: 10%
+    }
+
+
 }
-
