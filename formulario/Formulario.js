@@ -69,6 +69,10 @@
     let ftelefono = document.forms["formu"]["telefono"];
     let Ctextoerror = document.getElementById('contenedormsjerror');
     let textoerror = document.getElementById('textoerror');
+    let msjTurno = document.getElementById('msjTurno');
+    let pNombre = document.getElementById('pNombre');
+    let pDni = document.getElementById('pDni');
+    let pTelefono = document.getElementById('pTelefono');
 
     if (fnombre.value == "") {
       fnombre.style.borderBottom = "1px solid red"
@@ -105,9 +109,13 @@
     }
 
     if (fdni.value != "" && fnombre.value != "" && ftelefono.value != "" ){
-        textoerror.innerHTML = "Turno agendado";
-        textoerror.style.backgroundColor = "#21c1014a";
-        textoerror.style.borderColor= "green"
+       
+        Ctextoerror.style.opacity='0';
+        pNombre.innerHTML = fnombre.value;
+        pDni.innerHTML = fdni.value;
+        pTelefono.innerHTML = ftelefono.value;
+
+        msjTurno.style.display="flex";
 
 
     }
