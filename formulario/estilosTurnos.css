@@ -232,6 +232,13 @@ body {
     font-weight: 500;
 }
 
+.error{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid red;
+}
+
 @media screen and (max-width: 500px) {
 
     .contenedorTurnos{

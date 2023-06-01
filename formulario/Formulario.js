@@ -63,7 +63,6 @@
    Para cuando pise enviar se inicie la funcion validar:
 
    formulario.addEventListener('submit', validar) */
-   function validateForm() {
     let fnombre = document.forms["formu"]["nombre"];
     let fdni = document.forms["formu"]["dni"];
     let ftelefono = document.forms["formu"]["telefono"];
@@ -73,6 +72,8 @@
     let pNombre = document.getElementById('pNombre');
     let pDni = document.getElementById('pDni');
     let pTelefono = document.getElementById('pTelefono');
+   function validateForm() {
+   
 
     if (fnombre.value == "") {
       fnombre.style.borderBottom = "1px solid red"

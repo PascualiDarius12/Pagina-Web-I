@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="estilo.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-
+  
   <title>Centro de Salud</title>
 </head>
 
@@ -118,26 +117,27 @@
   <footer class="contenedorcontactos">
     <div class="contenedorformycontac">
       <div class="contenedorform">
-        <form action="" class="formulario">
+        <form onsubmit="return validar()" class="formulario" id="formulario">
           <span>Contacto</span>
           
             
-            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Nombre" id="nombre">
             
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" id="email">
           
           
-            <input type="text" placeholder="Telefono">
+            <input type="text" placeholder="Telefono" id="telefono">
           
           
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+            <textarea cols="30" rows="10" placeholder="Mensaje..." id="mensaje"></textarea>
           
-          
+            <div id="errores"></div>
          
 
           <button class="botonhover" type="submit">Enviar</button>
 
         </form>
+        <div id="enviado"></div>
       </div>
       <div class="contacto">
         <span>Horario Laboral</span>
@@ -182,5 +182,6 @@
 
 
 <script src="aparece.js"></script>
+<script src="validacion.js"></script>
 
 </html>
