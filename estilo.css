@@ -432,6 +432,22 @@
 
    }
 
+   .btnSalir{
+    position: absolute;
+    background-color: red;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 10px;
+    top: 3px;
+    right: 3px;
+    border-style: none;
+    cursor: pointer;
+   }
+
+   .btnSalir:hover{
+    background-color: brown;
+   }
+
 .formulario textarea{
     border-top: 0;
     border-left: 0;

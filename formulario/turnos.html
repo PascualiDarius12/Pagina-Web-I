@@ -9,7 +9,7 @@
    <link rel="stylesheet" type="text/css" href="../estilo.css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
    <title>Centro medico-Turnos</title>
-   
+
 </head>
 
 <body>
@@ -29,7 +29,7 @@
          <ul class="lista">
             <li class="botonesMenu"><a href="../index.html">Bienvenidos</a></li>
             <li class="botonesMenu"><a href="../Servicios/servicios.html">Servicios</a></li>
-            <li class="botonesMenu"><a href="">Profesionales</a></li>
+            <li class="botonesMenu"><a href="../formulario/turnos.html">Turnos</a></li>
             <li class="botonesMenu"><a href="">Acceso</a></li>
 
 
@@ -41,16 +41,16 @@
       <div class="contenedorTurnos">
 
          <div class="contenedorform2">
-            <form action="" class="formulario2" id="formulario" name="formu" onsubmit="return validateForm()">
+            <form action="" class="formulario2" id="formulario2" name="formu" onsubmit="return validar()">
                <span>Turnos</span>
 
 
-               <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+               <input type="text" id="nombre2" name="nombre" placeholder="Nombre">
 
-               <input type="text" if="dni" name="dni" placeholder="Dni">
+               <input type="text" id="dni2" name="dni" placeholder="Dni">
 
 
-               <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+               <input type="text" id="telefono2" name="telefono" placeholder="Telefono">
                <div class="labels">
 
 
@@ -62,7 +62,7 @@
 
 
                   <select name="especialidad" id="especialidad">
-                     <option value="0">--</option>
+                     <option value="0"></option>
                      <option value="1">Kinesiologia</option>
                      <option value="2">Fonoaudiologia</option>
                      <option value="3">Psicologia</option>
@@ -74,7 +74,7 @@
 
 
                   <select name="obraSocial" id="obraSocial">
-                     <option value="0">--</option>
+                     <option value="0">No tengo</option>
 
                      <option value="1">Dosep</option>
                      <option value="2">Oseca</option>
@@ -85,17 +85,18 @@
 
                </div>
 
-               <div class="contenedormsjerror" id="contenedormsjerror">
-                  <p class="textoerror" id="textoerror">asAS</p>
-               </div>
+               <div id="errores2"></div>
 
-                
+
 
 
 
                <button type="submit" id="boton">Solicitar</button>
 
             </form>
+            <div id="enviado2">
+               <button class="btnSalir" id="btnSalir">X</button>
+            </div>
          </div>
          <div class="contacto2">
             <span>Horario Laboral</span>
@@ -112,11 +113,11 @@
          <div class="msjTurno" id="msjTurno">
             <span>Turno Agendado!</span>
             <p id="pNombre"></p>
-            
+
             <p id="pDni"></p>
-           
+
             <p id="pTelefono"></p>
-            
+
             <p>recepción se comunicará con usted.</p>
          </div>
       </div>

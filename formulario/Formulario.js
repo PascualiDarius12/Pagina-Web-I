@@ -1,131 +1,96 @@
+document.forms["formulario2"].reset();
+let primero = document.querySelector("form input");
+primero.focus();
+
+function validar() {
+  let fNombre = document.getElementById("nombre2");
+  let fDni = document.getElementById("dni2");
+  let fTelefono = document.getElementById("telefono2");
+  let fServicio = document.getElementById("especialidad");
+  let fObraSocial = document.getElementById("obraSocial")
+
+  let fErrores = document.getElementById("errores2");
+  fErrores.innerHTML = "";
+  fErrores.style.display = "none;"
 
 
-   /* var formulario = document.getElementById('formulario'),
-        elementos = formulario.elementos,
-        boton = document.getElementById('boton')
-
-    let fnombre = document.forms["formu"]["nombre"];
-
-  /*funciones para validar cada input:
-
-    var validarNombre = function(){
-        if(fnombre.value == 0){
-          // alert("Debe completar el campo Nombre y Apellido");
-          fnombre.st
-          
-           
-        }
-
-    };
-    var validarDni = function(){
-        if(formulario.dni.value == 0){
-          // alert("Debe completar el campo Dni");
-           
-        }
-
-    };
-    var validarTelefono = function(){
-        if(formulario.telefono.value == 0){
-         //  alert("Debe completar el campo Telefono");
-          
-        }
-
-    };
-    var validarEspecialidad= function(){
-        if(formulario.especialidad.value == 0){
-          // alert("Debe elegir una Especialidad");
-          
-        }
-
-    };
-    var validarObraSocial= function(){
-        if(formulario.obraSocial.value == 0){
-          // alert("Debe elegir una Obra Social");
-          
-        }
-
-    };
+  let fEnviado = document.getElementById("enviado2");
 
 
+  let huboError = false;
 
-  la funcion validar tiene todas las funciones de vailidacion de cada input adentro:
+  if (fNombre.value == "") {
 
-   var validar = function(){
-
-    validarNombre();
-    validarDni();
-    validarTelefono();
-    validarEspecialidad();
-    validarObraSocial();
-
-   };
-
-   Para cuando pise enviar se inicie la funcion validar:
-
-   formulario.addEventListener('submit', validar) */
-    let fnombre = document.forms["formu"]["nombre"];
-    let fdni = document.forms["formu"]["dni"];
-    let ftelefono = document.forms["formu"]["telefono"];
-    let Ctextoerror = document.getElementById('contenedormsjerror');
-    let textoerror = document.getElementById('textoerror');
-    let msjTurno = document.getElementById('msjTurno');
-    let pNombre = document.getElementById('pNombre');
-    let pDni = document.getElementById('pDni');
-    let pTelefono = document.getElementById('pTelefono');
-   function validateForm() {
-   
-
-    if (fnombre.value == "") {
-      fnombre.style.borderBottom = "1px solid red"
-      Ctextoerror.style.opacity = '1'
-      textoerror.innerHTML = "complete sus datos"
-      textoerror.style.backgroundColor = "#c101014a";
-        textoerror.style.borderColor= "red"
-      
-    }else{
-        fnombre.style.borderBottom = "2px solid #01c1012e" 
-    }
-
-    
-    if (fdni.value == "") {
-      fdni.style.borderBottom = "1px solid red"
-      Ctextoerror.style.opacity = '1'
-      textoerror.innerHTML = "complete sus datos"
-      textoerror.style.backgroundColor = "#c101014a";
-        textoerror.style.borderColor= "red"
-      
-    }else{
-        fdni.style.borderBottom = "2px solid #01c1012e"
-    }
-    
-    if (ftelefono.value == "") {
-      ftelefono.style.borderBottom = "1px solid red"
-      Ctextoerror.style.opacity = '1'
-      textoerror.innerHTML = "complete sus datos"
-      textoerror.style.backgroundColor = "#c101014a";
-        textoerror.style.borderColor= "red"
-      
-    }else{
-        ftelefono.style.borderBottom = "2px solid #01c1012e"
-    }
-
-    if (fdni.value != "" && fnombre.value != "" && ftelefono.value != "" ){
-       
-        Ctextoerror.style.opacity='0';
-        pNombre.innerHTML = fnombre.value;
-        pDni.innerHTML = fdni.value;
-        pTelefono.innerHTML = ftelefono.value;
-
-        msjTurno.style.display="flex";
-
-
-    }
-
-    return false;
+    fNombre.style.borderBottom = "1px solid red";
+    let p = document.createElement("p");
+    p.innerHTML = "*Rellene el campo Nombre";
+    fErrores.appendChild(p);
+    huboError = true;
+  }
+  if (fDni.value == "" || isNaN(fDni.value)) {
+    fDni.style.borderBottom = "1px solid red"
+    let p = document.createElement("p");
+    p.innerHTML = "*Rellene el campo Dni"
+    fErrores.appendChild(p);
+    huboError = true;
 
   }
-   
-  
+
+  if (fTelefono.value == "" || isNaN(fTelefono.value)) {
+
+    fTelefono.style.borderBottom = "1px solid red";
+    let p = document.createElement("p");
+    p.innerHTML = "*Rellene el campo Telefono";
+    fErrores.appendChild(p);
+    huboError = true;
+  }
+
+  if(fServicio.selectedIndex == ""){
+    fServicio.style.border = "1px solid red";
+    let p = document.createElement("p");
+    p.innerHTML = "*Seleccione una Especialidad";
+    fErrores.appendChild(p);
+    huboError = true;
+  }
+
+
+
+  if (huboError) {
+    fErrores.style.display = "initial";
+    return false;
+  } else {
+
+    fNombre.style.borderBottom = "2px solid  #0157c12e"
+    fDni.style.borderBottom = "2px solid  #0157c12e"
+    fTelefono.style.borderBottom = "2px solid  #0157c12e"
+    fServicio.style.borderBottom = "0.5px solid black"
+    let p = document.createElement("p");
+
+
+    p.innerHTML = fNombre.value + "\nDNI:" + fDni.value + "\nTelefono: " + fTelefono.value + "\nEspecialidad:" +
+    fServicio.options[fServicio.selectedIndex].text + "\nObra Social:" + fObraSocial.options[fObraSocial.selectedIndex].text + "\nPronto nos comunicaremos con usted.";
+
+    fEnviado.style.display = "flex";
+    fEnviado.appendChild(p);
+    document.forms["formulario2"].reset();
+    let primero = document.querySelector("form input");
+    primero.focus();
+  }
+  return false;
+}
+
+//boton salir
+
+
+let btnSalir = document.getElementById("btnSalir")
+let fEnviado2 = document.getElementById("enviado2");
+
+function Salir(){
+   fEnviado2.style.display = "none";
+}
+
+btnSalir.addEventListener('click', Salir)
+
 
 
 

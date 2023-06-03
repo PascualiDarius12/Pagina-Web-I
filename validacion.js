@@ -1,3 +1,5 @@
+
+
 //VALIDAR FORMULARIO
 
 let reg_correo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
@@ -5,18 +7,18 @@ let reg_correo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
 
 function validar() {
     let fNombre = document.getElementById("nombre");
-   // fNombre.classList.remove("error");
+    // fNombre.classList.remove("error");
     let fMensaje = document.getElementById("mensaje");
-   // fMensaje.classList.remove("error"); 
+    // fMensaje.classList.remove("error"); 
     let fEmail = document.getElementById("email");
-   // fEmail.classList.remove("error");
+    // fEmail.classList.remove("error");
     let fTelefono = document.getElementById("telefono");
     //fTelefono.classList.remove("error")
     let fErrores = document.getElementById("errores");
     fErrores.innerHTML = "";
     fErrores.style.display = "none;"
     let fEnviado = document.getElementById("enviado");
-   
+
 
     let huboError = false;
 
@@ -37,7 +39,7 @@ function validar() {
         huboError = true;
     }
 
-    if (fTelefono.value == "") {
+    if (fTelefono.value == "" || isNaN(fTelefono.value)) {
 
         fTelefono.style.borderBottom = "1px solid red";
         let p = document.createElement("p");
@@ -47,7 +49,7 @@ function validar() {
     }
 
     if (fMensaje.value == "") {
-        fMensaje.style.borderBottom =  "1px solid red";
+        fMensaje.style.borderBottom = "1px solid red";
         let p = document.createElement("p");
         p.innerHTML = "*Complete el campo Mensaje";
         fErrores.appendChild(p);
@@ -65,6 +67,9 @@ function validar() {
         return false;
     } else {
         fEmail.style.borderBottom = "2px solid  #0157c12e";
+        fNombre.style.borderBottom = "2px solid  #0157c12e";
+        fTelefono.style.borderBottom = "2px solid  #0157c12e";
+        fMensaje.style.borderBottom = "2px solid  #0157c12e"
         let p = document.createElement("p");
         if (fEmail.value != "") {
             p.innerHTML =
@@ -75,7 +80,8 @@ function validar() {
         } else {
             p.innerHTML =
                 fNombre.value + " dice " +
-                fMensaje.value + ".";
+                fMensaje.value + "\n Telefono: " +
+                fTelefono.value + ".";
         }
         fEnviado.style.display = "flex";
         fEnviado.appendChild(p);
@@ -85,5 +91,17 @@ function validar() {
     }
     return false;
 }
+
+//boton salir
+
+
+let btnSalir = document.getElementById("btnSalir")
+let fEnviadoS = document.getElementById("enviado");
+
+function Salir(){
+   fEnviadoS.style.display = "none";
+}
+
+btnSalir.addEventListener('click', Salir)
 
 
